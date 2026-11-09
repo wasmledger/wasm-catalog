@@ -1,0 +1,36 @@
+{
+  "name": "@sik/wasm-catalog",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Hash-keyed catalog of mainnet Soroban wasm: harvester, custom-section decoder, Markdown docs, TypeScript bindings and a coverage / near-duplicate census.",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@10.22.0",
+  "bin": {
+    "wct": "./src/cli.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/*.test.ts",
+    "lint": "node scripts/lint.ts",
+    "cli": "node src/cli.ts",
+    "capture-fixtures": "node scripts/capture-fixtures.ts",
+    "check": "pnpm run lint && pnpm run typecheck && pnpm run test",
+    "demo:data": "node scripts/web-data.ts",
+    "web:install": "pnpm -C web install --frozen-lockfile",
+    "web:build": "pnpm -C web build",
+    "web:test": "pnpm -C web test",
+    "web:preview": "pnpm -C web preview",
+    "check:all": "pnpm run check && pnpm -C web test && pnpm -C web build"
+  },
+  "dependencies": {
+    "@stellar/stellar-sdk": "^17.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^7.0.2"
+  }
+}
