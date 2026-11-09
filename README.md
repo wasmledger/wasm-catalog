@@ -2,11 +2,13 @@
 
 A catalog of mainnet Soroban contract code keyed by wasm hash: a read-only harvester, a decoder for the Soroban custom sections, a Markdown page and TypeScript bindings per hash, and a coverage and near-duplicate census. Opening A10 in the discovery report; source issue [stellar/laboratory-backend#36](https://github.com/stellar/laboratory-backend/issues/36) (SDF brainstorm, 0 comments).
 
+**Live catalog: https://wasm-catalog.vercel.app/** (static site, recorded mainnet capture of 2026-11-04, read-only, unaudited). Source: https://github.com/wasmledger/wasm-catalog
+
 Package `@sik/wasm-catalog` (private). Ticket prefix WCT. Node 24, pnpm 10.22, `@stellar/stellar-sdk` ^17.3 (17.4.0 resolved), TypeScript 7.
 
-**Scope after prior art (PRIOR-ART.md):** per-contract interface viewers, an on-demand ABI registry with TS clients (SoroVault), publisher registries (Stellar Registry) and binding generators (stellar CLI, SDK `BindingGenerator`, lightsail) already exist. This project therefore focuses on (1) the mainnet census, (2) binding quality at scale, and (3) a static hash-keyed tree that SDF Lab could consume. Hosted pages, package publishing and MCP generation from #36 are not built.
+**Scope after prior art (PRIOR-ART.md):** per-contract interface viewers, an on-demand ABI registry with TS clients (SoroVault), publisher registries (Stellar Registry) and binding generators (stellar CLI, SDK `BindingGenerator`, lightsail) already exist. This project therefore focuses on (1) the mainnet census, (2) binding quality at scale, and (3) a static hash-keyed tree that SDF Lab could consume. The static web catalog is hosted (link above); per-hash pages on an official SDF host, package publishing and MCP generation from #36 are not built.
 
-## Status (2026-11-08)
+## Status (2026-11-09)
 
 MVP for an investor demo: see [MVP-PLAN.md](MVP-PLAN.md), [DEMO.md](DEMO.md), [PITCH.md](PITCH.md), [DEPLOY.md](DEPLOY.md). Gates: MAINNET READ-ONLY, UNAUDITED, G-VALUE closed.
 
@@ -26,7 +28,7 @@ MVP for an investor demo: see [MVP-PLAN.md](MVP-PLAN.md), [DEMO.md](DEMO.md), [P
 | Every distinct hash run by a listed contract: fetched, decoded, paged, bindings type-checked | Done 2026-11-04: 4,200/4,200 fetched, 4,191 bindings, all pass `tsc --strict` | `census/full-walk-2026-11-04/` |
 | Testnet, CAP-85 external refs, incremental watcher | Not done (WCT-015/016/017) | |
 | Regenerating `web/public/data` from a clean checkout | Not possible yet: `pnpm demo:data` needs the 553 MB recorded harvest in `out/` (gitignored, this machine only). The committed data is verified against `census/` by `test/webdata.test.ts` (WCT-030) | |
-| Publishing (git repo of the tree, jsr/npm, hosted pages) | Not done; needs the user (WCT-020); checklist in DEPLOY.md | |
+| Publishing | Git repo public at wasmledger/wasm-catalog and static web catalog on Vercel, both 2026-11-09. Not done: jsr/npm packages, per-hash bindings packages, hosting under an SDF domain (WCT-020); checklist in DEPLOY.md | https://wasm-catalog.vercel.app/ |
 
 ### Sample run, 2026-11-04 (measured)
 
@@ -107,8 +109,8 @@ pnpm run check:all   # check + web tests (9) + web build
 
 ## Safety
 
-Wasm blobs are parsed, never compiled or executed. Network use is HTTP GET and allow-listed RPC reads, one request per >= 500 ms, cached. The stellar CLI is run only on our own synthetic fixtures. No keys, no transactions, no outreach (drafts in `drafts/`).
+Wasm blobs are parsed, never compiled or executed. Network use is HTTP GET and allow-listed RPC reads, one request per >= 500 ms, cached. The stellar CLI is run only on our own synthetic fixtures. No keys, no transactions, no outreach (unposted drafts stay local, gitignored).
 
 ## Layout
 
-`src/` code (see ARCHITECTURE.md), `test/`, `scripts/`, `fixtures/synthetic` (own), `fixtures/mainnet` (captured, with provenance), `census/` (committed run results), `examples/`, `drafts/` (unposted upstream text).
+`src/` code (see ARCHITECTURE.md), `test/`, `scripts/`, `fixtures/synthetic` (own), `fixtures/mainnet` (captured, with provenance), `census/` (committed run results), `examples/`, `drafts/` (unposted upstream text; kept local and gitignored, not in this repo).
