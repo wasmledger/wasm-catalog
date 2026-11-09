@@ -1,0 +1,437 @@
+{
+  "format": "sik.wasm-catalog.coverage/v1",
+  "generatedAt": "2026-11-04T01:10:05.477Z",
+  "generator": "@sik/wasm-catalog (@sik/wasm-catalog bindings v1, @stellar/stellar-sdk 17.4.0)",
+  "sdkVersion": "17.4.0",
+  "harvest": {
+    "generatedAt": "2026-11-04T00:51:35.679Z",
+    "rpcUrl": "https://mainnet.sorobanrpc.com",
+    "latestLedger": 65293477,
+    "oldestLedger": 65172518,
+    "sePages": 16,
+    "seStrata": 16,
+    "eventWindows": 24,
+    "eventsRead": 24000,
+    "selection": "all 282 distinct hashes seen",
+    "net": {
+      "live": 78,
+      "cached": 3,
+      "retries": 1,
+      "bytes": 22879745
+    },
+    "crossCheck": {
+      "checked": 200,
+      "agree": 200,
+      "disagree": 0,
+      "examples": []
+    }
+  },
+  "contracts": {
+    "total": 3715,
+    "bySource": {
+      "rpc-events": 438,
+      "rpc-instance": 715,
+      "se-top": 100,
+      "se-contracts": 3200
+    },
+    "seListingNoWasm": 78,
+    "rpcExecutable": {
+      "no_instance": 344,
+      "wasm": 293,
+      "stellar_asset": 78
+    },
+    "withWasmHash": 3221,
+    "runningAFetchedHash": 3221
+  },
+  "hashes": {
+    "seen": 282,
+    "contractsPerHash": {
+      "1": 227,
+      "2-9": 41,
+      "10-99": 12,
+      "100-999": 1,
+      "1000+": 1
+    },
+    "mostUsed": [
+      {
+        "hash": "07097f83dae3b746db7dba3263d9cc334efb88a9a7d5450fb96ca19f33d284b0",
+        "contracts": 2519,
+        "functions": 12,
+        "sdkVersion": "22.0.7"
+      },
+      {
+        "hash": "ecd990f0b45ca6817149b6175f79b32efb442f35731985a084131e8265c4cd90",
+        "contracts": 100,
+        "functions": 6,
+        "sdkVersion": "22.0.7"
+      },
+      {
+        "hash": "0a41411f7250a78da15d6cd6cf78086e19d98bc917dd0a51e03a34f5ab969781",
+        "contracts": 39,
+        "functions": 16,
+        "sdkVersion": "22.0.6"
+      },
+      {
+        "hash": "1b5f4534a76322da2ad7c745f6900857a6802b0ca79850c35a03561df997785a",
+        "contracts": 31,
+        "functions": 17,
+        "sdkVersion": "26.1.0"
+      },
+      {
+        "hash": "7ac3713a1df2919fc76d50539bbbadf7fc9758cedb5fe7d322c93dd5d5fb42f2",
+        "contracts": 26,
+        "functions": 3,
+        "sdkVersion": "22.0.7"
+      },
+      {
+        "hash": "2ddb5ef1f8f029ea93313ed7a6886f763eda7287d8a08bacc0a427ab0aa1dc1f",
+        "contracts": 25,
+        "functions": 15,
+        "sdkVersion": "26.0.0"
+      },
+      {
+        "hash": "72ae9a04124c9cdab25ecd7a58a7b7be28ecd8791dd02fefbaddfd06f521299f",
+        "contracts": 25,
+        "functions": 5,
+        "sdkVersion": "23.4.0"
+      },
+      {
+        "hash": "b62f62217ff256d557513793e9e44317b25b14401a8a6b6149a04d38d72d6c7c",
+        "contracts": 25,
+        "functions": 6,
+        "sdkVersion": "22.0.3"
+      },
+      {
+        "hash": "bfab576fb405952fdeb0c502e3f662668601f3b63111bcf034c240cea4b6240d",
+        "contracts": 18,
+        "functions": 13,
+        "sdkVersion": "22.0.11"
+      },
+      {
+        "hash": "f340242d143b42e273f628f44ccb907f55f5beb256f3de17de2c005fcdbc9783",
+        "contracts": 17,
+        "functions": 15,
+        "sdkVersion": "23.4.0"
+      }
+    ],
+    "selected": 282,
+    "fetch": {
+      "rpc": 282
+    },
+    "decodedBlobs": 282,
+    "wasmParses": 282,
+    "sizeBytes": {
+      "min": 484,
+      "max": 114978,
+      "total": 6456670
+    }
+  },
+  "sections": {
+    "specPresent": 280,
+    "specDecodesSdk": 280,
+    "specFromWasmSdk": 280,
+    "specMultiSection": 0,
+    "specEmpty": 0,
+    "withEvents": 101,
+    "metaPresent": 280,
+    "metaDecodesSdk": 280,
+    "envMetaPresent": 282,
+    "protocols": {
+      "20": 24,
+      "21": 14,
+      "22": 85,
+      "23": 41,
+      "25": 55,
+      "26": 21,
+      "27": 13,
+      "28": 26,
+      "29": 3
+    },
+    "sdkMajor": {
+      "20": 24,
+      "21": 14,
+      "22": 84,
+      "23": 42,
+      "25": 54,
+      "26": 21,
+      "27": 13,
+      "28": 25,
+      "29": 3,
+      "(none)": 2
+    },
+    "sdkVersions": {
+      "22.0.8": 25,
+      "28.0.0": 25,
+      "22.0.7": 23,
+      "22.0.11": 22,
+      "25.3.1": 21,
+      "20.5.0": 17,
+      "25.1.1": 15,
+      "25.3.0": 12,
+      "26.1.0": 12,
+      "23.0.2": 11,
+      "22.0.6": 9,
+      "23.5.3": 8,
+      "23.2.1": 6,
+      "23.4.0": 5,
+      "26.1.1": 5,
+      "21.7.6": 4,
+      "21.7.7": 4,
+      "25.0.2": 4,
+      "27.0.6": 4,
+      "20.2.0": 3,
+      "20.4.0": 3,
+      "23.5.2": 3,
+      "26.0.0": 3,
+      "27.0.2": 3,
+      "27.0.3": 3,
+      "(none)": 2,
+      "21.1.1": 2,
+      "22.0.3": 2,
+      "23.0.1": 2,
+      "23.0.3": 2,
+      "23.1.0": 2,
+      "29.0.1": 2,
+      "20.3.2": 1,
+      "21.4.0": 1,
+      "21.5.0": 1,
+      "21.6.0": 1,
+      "21.7.4": 1,
+      "22.0.2": 1,
+      "22.0.4": 1,
+      "22.0.5": 1,
+      "23.0.0": 1,
+      "23.1.1": 1,
+      "23.3.0": 1,
+      "25.1.0": 1,
+      "25.3.2": 1,
+      "26.0.1": 1,
+      "27.0.0": 1,
+      "27.0.0-rc.1": 1,
+      "27.0.5": 1,
+      "29.0.0": 1
+    },
+    "metaKeys": {
+      "rssdkver": 280,
+      "rsver": 280,
+      "cliver": 139,
+      "rssdk_spec_shaking": 47,
+      "license": 23,
+      "binver": 22,
+      "copyright": 22,
+      "source_repo": 13,
+      "Description": 12,
+      "desc": 8,
+      "bldimg": 4,
+      "bldopt": 4,
+      "source_sha256": 4,
+      "name": 3,
+      "title": 3,
+      "scaffold_version": 2,
+      "authors": 1,
+      "contract": 1,
+      "repo": 1,
+      "sep": 1,
+      "source_commit": 1,
+      "version": 1
+    },
+    "sep47Declared": 1,
+    "sep47Seps": {
+      "40": 1
+    },
+    "sep55SourceRepo": 13,
+    "sep58": {
+      "conformant": 4
+    }
+  },
+  "bindings": {
+    "generated": 280,
+    "withDiagnostics": 66,
+    "diagnosticsByClass": {
+      "same error code with two names across error enums": 121,
+      "reference to a type the spec does not declare": 82,
+      "duplicate name in spec (renamed)": 44,
+      "name renamed (reserved, invalid or taken)": 3
+    },
+    "hashesByDiagnosticClass": {
+      "reference to a type the spec does not declare": 38,
+      "same error code with two names across error enums": 18,
+      "duplicate name in spec (renamed)": 15,
+      "name renamed (reserved, invalid or taken)": 3
+    },
+    "typecheck": {
+      "ran": true,
+      "pass": 280,
+      "fail": 0,
+      "errorCodes": {},
+      "error": null
+    },
+    "sdkGenerator": {
+      "ran": true,
+      "pass": 190,
+      "fail": 90,
+      "errorCodes": {
+        "TS2749": 57,
+        "TS2305": 38,
+        "TS2304": 6,
+        "TS2451": 4,
+        "TS2300": 3,
+        "TS2344": 1
+      },
+      "error": null
+    }
+  },
+  "duplicates": {
+    "sameInterface": {
+      "distinct": 271,
+      "groupsWithDuplicates": 6,
+      "hashesInDuplicateGroups": 15,
+      "largest": [
+        {
+          "key": "780ee9b81fbaacf9fe53766433fd92fbc371faff5c5017d1b19a9da188735259",
+          "hashes": 5,
+          "contracts": 129,
+          "sdkVersions": [
+            "22.0.3",
+            "22.0.7",
+            "23.0.2"
+          ],
+          "sample": [
+            "b62f62217ff256d557513793e9e44317b25b14401a8a6b6149a04d38d72d6c7c",
+            "c5509dfa5f022deb8ae621f073adac5fd788feca0b24d15b5f392ab22c2ff222",
+            "e45c42b944a767bd5f37f8c4a469b48917d28e23481dbfd550419c84cdacde92",
+            "ecd990f0b45ca6817149b6175f79b32efb442f35731985a084131e8265c4cd90",
+            "fae676d67ccf9a631f15b823ca78bab9c8060b4d6cf48cbaedee9a17b6011bf0"
+          ]
+        },
+        {
+          "key": "339ede3ff88a5a8ed23f07fb37b89620e11a9e74544bf0fa28040456bc6fa4ea",
+          "hashes": 2,
+          "contracts": 5,
+          "sdkVersions": [
+            "25.3.1"
+          ],
+          "sample": [
+            "016c4baed7298f4835c49cae27857232ec9de9422bf77dcb55cc97d3664b05b6",
+            "2aa62df324ae3d28b6492e8e08d230a41c62e1fd6d4719e4bec5ee11b30c66bc"
+          ]
+        },
+        {
+          "key": "71ca8039983752cec65679551fd10cd0aa1bdf21e92e79bb690a600749a4edaf",
+          "hashes": 2,
+          "contracts": 2,
+          "sdkVersions": [
+            "22.0.8"
+          ],
+          "sample": [
+            "83bf0a7fbe1502271f2e14d2a5a46c9cde1aa213be97616bd7c6b102b342692f",
+            "f48f10d9c7d35fc7783b5e27578bf0e764e3a30ff26a3bd7d8e57758c17a9ea8"
+          ]
+        },
+        {
+          "key": "95b05dc7a7b6e6459b273ff873759575f171011419767c4d199d2f7944d8cfde",
+          "hashes": 2,
+          "contracts": 2,
+          "sdkVersions": [
+            "23.0.2"
+          ],
+          "sample": [
+            "414e06172b1a83ad55c8b7977e511eb26c4dd51b476d9c2c671f24e286aeb6d8",
+            "8304bb89d3fe8a916b0784bd829d95a1caba8a4cd60c8e91ad250fc035be9062"
+          ]
+        },
+        {
+          "key": "d22c78b3331cef74c2a4e16849e853dfd16ae754c7118187c3dae740a19357fc",
+          "hashes": 2,
+          "contracts": 2,
+          "sdkVersions": [
+            "22.0.8"
+          ],
+          "sample": [
+            "a883b221d8bea1050cfe6d4e9c27dffc43c54bf110f4d1f55d1c0d41d13d0c2a",
+            "eb86db35b6c6c282e4c01245718108a0138020da9af1a932f8f0e1e071c20416"
+          ]
+        },
+        {
+          "key": "f2dc8de9af01f1217304a21d4df44aac18c7168a392913a0db2e62d22115a547",
+          "hashes": 2,
+          "contracts": 14,
+          "sdkVersions": [
+            "22.0.8"
+          ],
+          "sample": [
+            "4536723b074aa9290d5b79a69ff8dff0eb0804183dbb2b340850564b293c9928",
+            "76d2ba826c1b5a7b6cc0aaebe058cc3ffc373c2171f90d63ebb7481a28f577bd"
+          ]
+        }
+      ]
+    },
+    "sameSpecBytes": {
+      "distinct": 273,
+      "groupsWithDuplicates": 4,
+      "hashesInDuplicateGroups": 11,
+      "largest": [
+        {
+          "key": "ec3ef24e0cd9712993e0ef04245d29b883cd28fbf8e422821571ed38b476fb1d",
+          "hashes": 5,
+          "contracts": 129,
+          "sdkVersions": [
+            "22.0.3",
+            "22.0.7",
+            "23.0.2"
+          ],
+          "sample": [
+            "b62f62217ff256d557513793e9e44317b25b14401a8a6b6149a04d38d72d6c7c",
+            "c5509dfa5f022deb8ae621f073adac5fd788feca0b24d15b5f392ab22c2ff222",
+            "e45c42b944a767bd5f37f8c4a469b48917d28e23481dbfd550419c84cdacde92",
+            "ecd990f0b45ca6817149b6175f79b32efb442f35731985a084131e8265c4cd90",
+            "fae676d67ccf9a631f15b823ca78bab9c8060b4d6cf48cbaedee9a17b6011bf0"
+          ]
+        },
+        {
+          "key": "56b77495827a848475a7894795f94bb0f2fdec90b00cf27470d6c5396a38905d",
+          "hashes": 2,
+          "contracts": 2,
+          "sdkVersions": [
+            "23.0.2"
+          ],
+          "sample": [
+            "414e06172b1a83ad55c8b7977e511eb26c4dd51b476d9c2c671f24e286aeb6d8",
+            "8304bb89d3fe8a916b0784bd829d95a1caba8a4cd60c8e91ad250fc035be9062"
+          ]
+        },
+        {
+          "key": "61ba60f30ec47d38c2d8aa3687b28b1ff722ab81b9db6508aecc55536159c5bf",
+          "hashes": 2,
+          "contracts": 5,
+          "sdkVersions": [
+            "25.3.1"
+          ],
+          "sample": [
+            "016c4baed7298f4835c49cae27857232ec9de9422bf77dcb55cc97d3664b05b6",
+            "2aa62df324ae3d28b6492e8e08d230a41c62e1fd6d4719e4bec5ee11b30c66bc"
+          ]
+        },
+        {
+          "key": "e7fba4e331f3a33e3daf87f194763cdf16b81272ab8e309c9a7e7941e69a5fa7",
+          "hashes": 2,
+          "contracts": 14,
+          "sdkVersions": [
+            "22.0.8"
+          ],
+          "sample": [
+            "4536723b074aa9290d5b79a69ff8dff0eb0804183dbb2b340850564b293c9928",
+            "76d2ba826c1b5a7b6cc0aaebe058cc3ffc373c2171f90d63ebb7481a28f577bd"
+          ]
+        }
+      ]
+    },
+    "sameCodeModuloCustomSections": {
+      "distinct": 282,
+      "groupsWithDuplicates": 0,
+      "hashesInDuplicateGroups": 0,
+      "largest": []
+    },
+    "sameInterfaceDifferentSpecBytes": 2
+  }
+}

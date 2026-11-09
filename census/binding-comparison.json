@@ -1,0 +1,87 @@
+{
+  "generatedAt": "2026-11-04T00:59:32.764Z",
+  "cliVersion": "stellar 25.2.0 (28484880988199233a7e8e87c97cb12dac323cb3)",
+  "fixtures": [
+    "full.wasm",
+    "adversarial.wasm"
+  ],
+  "rows": [
+    {
+      "fixture": "full.wasm",
+      "generator": "wasm-catalog",
+      "generated": true,
+      "typecheck": "pass",
+      "errors": [],
+      "notes": []
+    },
+    {
+      "fixture": "full.wasm",
+      "generator": "sdk BindingGenerator",
+      "generated": true,
+      "typecheck": "pass",
+      "errors": [],
+      "notes": []
+    },
+    {
+      "fixture": "full.wasm",
+      "generator": "stellar CLI (stellar 25.2.0 (28484880988199233a7e8e87c97cb12dac323cb3))",
+      "generated": true,
+      "typecheck": "pass",
+      "errors": [],
+      "notes": [
+        "no event types emitted"
+      ]
+    },
+    {
+      "fixture": "adversarial.wasm",
+      "generator": "wasm-catalog",
+      "generated": true,
+      "typecheck": "pass",
+      "errors": [],
+      "notes": [
+        "type \"Client\" emitted as Client_2",
+        "type \"class\" emitted as class_2",
+        "type \"Promise\" emitted as Promise_2",
+        "duplicate type \"Dup\" emitted as Dup_2",
+        "type \"Bad*/Name\" emitted as Bad__Name",
+        "error code 1 declared twice (\"One\" kept, \"Uno\" dropped)",
+        "function \"spec\" collides with contract.Client member spec; left out of the typed interface",
+        "function \"options\" collides with contract.Client member options; left out of the typed interface",
+        "function \"toString\" collides with contract.Client member toString; left out of the typed interface",
+        "function \"a_b\" maps to method a_b which already exists; left out",
+        "reference to undeclared type \"NotDeclared\" mapped to unknown"
+      ]
+    },
+    {
+      "fixture": "adversarial.wasm",
+      "generator": "sdk BindingGenerator",
+      "generated": true,
+      "typecheck": "fail",
+      "errors": [
+        "TS2305: Module '\"./types.js\"' has no exported member 'NotDeclared'.",
+        "TS2395: Individual declarations in merged declaration 'Client' must be all exported or all local.",
+        "TS2440: Import declaration conflicts with local declaration of 'Client'.",
+        "TS2430: Interface 'import(\"/home/ezedikeevan/Desktop/blockchain/stellar/stellar-institutional-kit/projects/wasm-catalog/out/compare/sdk/bcc01b7e9484e85ecf98533d36877c76d4b01b3e417e02127f93f89d7f52f357/client\"",
+        "TS2425: Class 'Client' defines instance member property 'spec', but extended class 'Client' defines it as instance member function."
+      ],
+      "notes": []
+    },
+    {
+      "fixture": "adversarial.wasm",
+      "generator": "stellar CLI (stellar 25.2.0 (28484880988199233a7e8e87c97cb12dac323cb3))",
+      "generated": true,
+      "typecheck": "fail",
+      "errors": [
+        "TS1128: Declaration or statement expected.",
+        "TS2427: Interface name cannot be 'class'.",
+        "TS1005: ')' expected.",
+        "TS1131: Property or signature expected.",
+        "TS1005: '{' expected."
+      ],
+      "notes": [
+        "struct field / argument \"weird name\" renamed to weird_name (runtime keys use the spec name)",
+        "no event types emitted"
+      ]
+    }
+  ]
+}

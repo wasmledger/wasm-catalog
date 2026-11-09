@@ -1,0 +1,1103 @@
+{
+  "format": "sik.wasm-catalog.coverage/v1",
+  "generatedAt": "2026-11-04T16:35:48.850Z",
+  "generator": "@sik/wasm-catalog (@sik/wasm-catalog bindings v1, @stellar/stellar-sdk 17.4.0)",
+  "sdkVersion": "17.4.0",
+  "harvest": {
+    "generatedAt": "2026-11-04T01:55:04.331Z",
+    "rpcUrl": "https://mainnet.sorobanrpc.com",
+    "latestLedger": 65293972,
+    "oldestLedger": 65173013,
+    "sePages": 832,
+    "seStrata": "full walk",
+    "eventWindows": 24,
+    "eventsRead": 24000,
+    "selection": "all 4200 distinct hashes seen",
+    "net": {
+      "live": 252,
+      "cached": 833,
+      "retries": 0,
+      "bytes": 67806666
+    },
+    "crossCheck": {
+      "checked": 200,
+      "agree": 200,
+      "disagree": 0,
+      "examples": []
+    }
+  },
+  "contracts": {
+    "total": 166382,
+    "bySource": {
+      "se-contracts": 166101,
+      "rpc-instance": 481,
+      "rpc-events": 375,
+      "se-top": 100
+    },
+    "seListingNoWasm": 4152,
+    "rpcExecutable": {
+      "no_instance": 281,
+      "wasm": 192,
+      "stellar_asset": 8
+    },
+    "withWasmHash": 161949,
+    "runningAFetchedHash": 161949
+  },
+  "hashes": {
+    "seen": 4200,
+    "contractsPerHash": {
+      "1": 3035,
+      "2-9": 931,
+      "10-99": 208,
+      "100-999": 18,
+      "1000+": 8
+    },
+    "mostUsed": [
+      {
+        "hash": "07097f83dae3b746db7dba3263d9cc334efb88a9a7d5450fb96ca19f33d284b0",
+        "contracts": 131459,
+        "functions": 12,
+        "sdkVersion": "22.0.7"
+      },
+      {
+        "hash": "ecd990f0b45ca6817149b6175f79b32efb442f35731985a084131e8265c4cd90",
+        "contracts": 4616,
+        "functions": 6,
+        "sdkVersion": "22.0.7"
+      },
+      {
+        "hash": "0a41411f7250a78da15d6cd6cf78086e19d98bc917dd0a51e03a34f5ab969781",
+        "contracts": 2276,
+        "functions": 16,
+        "sdkVersion": "22.0.6"
+      },
+      {
+        "hash": "1b5f4534a76322da2ad7c745f6900857a6802b0ca79850c35a03561df997785a",
+        "contracts": 1598,
+        "functions": 17,
+        "sdkVersion": "26.1.0"
+      },
+      {
+        "hash": "f340242d143b42e273f628f44ccb907f55f5beb256f3de17de2c005fcdbc9783",
+        "contracts": 1407,
+        "functions": 15,
+        "sdkVersion": "23.4.0"
+      },
+      {
+        "hash": "7ac3713a1df2919fc76d50539bbbadf7fc9758cedb5fe7d322c93dd5d5fb42f2",
+        "contracts": 1257,
+        "functions": 3,
+        "sdkVersion": "22.0.7"
+      },
+      {
+        "hash": "72ae9a04124c9cdab25ecd7a58a7b7be28ecd8791dd02fefbaddfd06f521299f",
+        "contracts": 1135,
+        "functions": 5,
+        "sdkVersion": "23.4.0"
+      },
+      {
+        "hash": "2ddb5ef1f8f029ea93313ed7a6886f763eda7287d8a08bacc0a427ab0aa1dc1f",
+        "contracts": 1021,
+        "functions": 15,
+        "sdkVersion": "26.0.0"
+      },
+      {
+        "hash": "0c0a264d4cc0b3e79b8533e2a2e1f0ed21501a5a3f9f2455d2f18c232940b865",
+        "contracts": 809,
+        "functions": 5,
+        "sdkVersion": "21.7.6"
+      },
+      {
+        "hash": "bfab576fb405952fdeb0c502e3f662668601f3b63111bcf034c240cea4b6240d",
+        "contracts": 798,
+        "functions": 13,
+        "sdkVersion": "22.0.11"
+      }
+    ],
+    "selected": 4200,
+    "fetch": {
+      "rpc": 4200
+    },
+    "decodedBlobs": 4200,
+    "wasmParses": 4200,
+    "sizeBytes": {
+      "min": 65,
+      "max": 130229,
+      "total": 79592379
+    }
+  },
+  "sections": {
+    "specPresent": 4191,
+    "specDecodesSdk": 4191,
+    "specFromWasmSdk": 4191,
+    "specMultiSection": 0,
+    "specEmpty": 6,
+    "withEvents": 1150,
+    "metaPresent": 4184,
+    "metaDecodesSdk": 4184,
+    "envMetaPresent": 4200,
+    "protocols": {
+      "0": 7,
+      "20": 419,
+      "21": 370,
+      "22": 1120,
+      "23": 643,
+      "25": 783,
+      "26": 366,
+      "27": 266,
+      "28": 180,
+      "29": 46
+    },
+    "sdkMajor": {
+      "20": 418,
+      "21": 369,
+      "22": 1118,
+      "23": 646,
+      "25": 777,
+      "26": 366,
+      "27": 265,
+      "28": 172,
+      "29": 46,
+      "(none)": 23
+    },
+    "sdkVersions": {
+      "22.0.8": 375,
+      "25.3.1": 374,
+      "22.0.11": 348,
+      "20.5.0": 277,
+      "22.0.7": 233,
+      "26.1.0": 209,
+      "21.7.7": 188,
+      "28.0.0": 172,
+      "25.3.0": 166,
+      "25.1.1": 164,
+      "23.5.3": 127,
+      "23.4.0": 103,
+      "27.0.6": 94,
+      "23.2.1": 78,
+      "23.0.2": 77,
+      "23.1.0": 70,
+      "26.1.1": 69,
+      "20.3.2": 64,
+      "22.0.6": 58,
+      "21.7.6": 52,
+      "23.4.1": 50,
+      "21.1.1": 49,
+      "26.0.0": 48,
+      "27.0.5": 45,
+      "27.0.2": 42,
+      "26.0.1": 40,
+      "22.0.10": 37,
+      "29.0.1": 35,
+      "23.0.1": 33,
+      "27.0.0": 31,
+      "27.0.3": 29,
+      "20.4.0": 28,
+      "25.1.0": 28,
+      "21.6.0": 27,
+      "23.5.2": 27,
+      "20.2.0": 24,
+      "22.0.5": 24,
+      "(none)": 23,
+      "25.0.2": 22,
+      "23.0.3": 21,
+      "23.5.1": 21,
+      "23.0.0": 20,
+      "21.7.4": 19,
+      "25.3.2": 17,
+      "22.0.2": 15,
+      "20.3.1": 12,
+      "23.3.0": 12,
+      "29.0.0": 11,
+      "22.0.9": 10,
+      "27.0.1": 10,
+      "27.0.4": 10,
+      "21.5.0": 8,
+      "22.0.4": 8,
+      "21.7.0": 6,
+      "22.0.3": 6,
+      "23.1.1": 6,
+      "20.0.0": 5,
+      "21.4.0": 5,
+      "21.5.1": 5,
+      "20.0.2": 4,
+      "27.0.0-rc.1": 4,
+      "20.0.3": 3,
+      "21.7.3": 3,
+      "22.0.0-rc.3.2": 3,
+      "21.0.1-preview.3": 2,
+      "21.1.0-rc.1": 2,
+      "25.0.0-rc.2": 2,
+      "25.2.0": 2,
+      "20.0.0-rc2": 1,
+      "21.3.0": 1,
+      "21.7.2": 1,
+      "21.7.5": 1,
+      "22.0.0-rc.3": 1,
+      "23.0.0-rc.2.3": 1,
+      "25.0.0": 1,
+      "25.0.1": 1
+    },
+    "metaKeys": {
+      "rssdkver": 4177,
+      "rsver": 4177,
+      "cliver": 1939,
+      "rssdk_spec_shaking": 457,
+      "source_repo": 168,
+      "Description": 157,
+      "binver": 156,
+      "license": 74,
+      "copyright": 70,
+      "desc": 45,
+      "home_domain": 45,
+      "bldimg": 33,
+      "name": 33,
+      "Version": 31,
+      "bldopt": 29,
+      "source_sha256": 29,
+      "version": 18,
+      "scaffold_version": 16,
+      "description": 13,
+      "title": 12,
+      "sep": 11,
+      "assdkver": 7,
+      "source_commit": 7,
+      "authors": 3,
+      "contract": 3,
+      "Debwewin UserId": 3,
+      "source_rev": 3,
+      "bldopt_manifest_path": 2,
+      "bldopt_package": 2,
+      "bldopt_profile": 2,
+      "org": 2,
+      "repo": 2,
+      "security_contact": 2,
+      "coins": 1,
+      "cyphras_vk": 1,
+      "decimals": 1,
+      "domain": 1,
+      "License": 1,
+      "stye": 1,
+      "supply_policy": 1,
+      "symbol": 1,
+      "total_supply": 1,
+      "url": 1,
+      "ver": 1
+    },
+    "sep47Declared": 11,
+    "sep47Seps": {
+      "40": 4,
+      "41": 7
+    },
+    "sep55SourceRepo": 168,
+    "sep58": {
+      "conformant": 29,
+      "non-conformant": 4
+    }
+  },
+  "bindings": {
+    "generated": 4191,
+    "withDiagnostics": 580,
+    "diagnosticsByClass": {
+      "same error code with two names across error enums": 3945,
+      "duplicate name in spec (renamed)": 818,
+      "reference to a type the spec does not declare": 611,
+      "name renamed (reserved, invalid or taken)": 15,
+      "two functions map to one method name": 3
+    },
+    "hashesByDiagnosticClass": {
+      "reference to a type the spec does not declare": 255,
+      "same error code with two names across error enums": 212,
+      "duplicate name in spec (renamed)": 199,
+      "name renamed (reserved, invalid or taken)": 15,
+      "two functions map to one method name": 1
+    },
+    "typecheck": {
+      "ran": true,
+      "pass": 4191,
+      "fail": 0,
+      "errorCodes": {},
+      "error": null
+    },
+    "sdkGenerator": {
+      "ran": true,
+      "pass": 3032,
+      "fail": 1159,
+      "errorCodes": {
+        "TS2749": 890,
+        "TS2305": 225,
+        "TS2304": 62,
+        "TS2300": 50,
+        "TS2451": 37,
+        "TS2344": 13,
+        "TS2724": 3,
+        "TS2567": 2,
+        "TS1117": 1,
+        "TS2552": 1
+      },
+      "error": null
+    }
+  },
+  "duplicates": {
+    "sameInterface": {
+      "distinct": 3399,
+      "groupsWithDuplicates": 468,
+      "hashesInDuplicateGroups": 1260,
+      "largest": [
+        {
+          "key": "48cf07eb00a35b972e9b1d220d80a8478af13f96089c892f49f350eb21a61dfa",
+          "hashes": 18,
+          "contracts": 32,
+          "sdkVersions": [
+            "(none)",
+            "20.2.0",
+            "20.3.1",
+            "20.3.2",
+            "20.5.0",
+            "21.1.1",
+            "21.6.0",
+            "22.0.7",
+            "25.1.0"
+          ],
+          "sample": [
+            "0b1452c7f942b0879bab79dc5ffd15077ccbd5909ff806371660a0c7b43d88ed",
+            "1cf1ad98b51444c86d78bb526594f7380ecaf243db3aee807a2e4813ecec62e5",
+            "235a706073c2cfc5d1a88b533349e5c7819bb16ae6f1d8c5f7414d990eaa4581",
+            "286f4fc9deebdfb306cbd533f4cbea75c24c746f9fc4481e4dab0b4738e3797d",
+            "3aea65ff1e6f584e8987b61c641e090a33ec45512013c78bf6324c356332aa98"
+          ]
+        },
+        {
+          "key": "8e82090517eb741c7370f8898eb1d4450a56986885a47a561fadc64bd55ad8d0",
+          "hashes": 14,
+          "contracts": 40,
+          "sdkVersions": [
+            "20.5.0",
+            "21.7.4",
+            "22.0.5",
+            "22.0.6",
+            "22.0.7",
+            "22.0.8",
+            "23.1.0",
+            "23.5.1",
+            "25.3.1",
+            "26.0.1",
+            "26.1.0"
+          ],
+          "sample": [
+            "073b070eaf32b07ffd4ab83704dee2207adf1416d1b254d3fe999caf7d22ff06",
+            "0837462232e532f98f540a531e407868c90b0f101bbf7d3538246aa0b4fe547d",
+            "2947d39cb28bf34dda3ebb6ff4b31a7a51d4e88dbcae0158fefb4f0931f02487",
+            "37619824f970d1ff5ad6d2d2472a9af9e2eb3db14778469c2b231c4d9e37be54",
+            "61db354e1479556eac04f5f45d30f3a3c06c9847c512cc53fcbe320a6cdb8818"
+          ]
+        },
+        {
+          "key": "7814e316e50dd6437b390c3f004dded903281adb3f80768771dcda75c3c689bf",
+          "hashes": 10,
+          "contracts": 33,
+          "sdkVersions": [
+            "20.0.0",
+            "20.2.0",
+            "20.3.2",
+            "21.1.1",
+            "21.7.7",
+            "22.0.7"
+          ],
+          "sample": [
+            "14690cce38f89fd37eac1b516ed3be17967c9fb45e97adcb779ff65b636e9da3",
+            "3bd4a6da60043c5fe2d077bf31055ef7b83fe0dfccf0e270460ad2704b118507",
+            "4cd470fc841156a321c109d0b2c06796291dcb471046e910e7a8864432d32d11",
+            "6c83329a13014736589fbfd2af4ba99c080eab87ffc2cdf5d2df20b1c31e7448",
+            "845414782b49c2ba195940707a54e85c53d7ecd541185afd3bf86e07a4f10694"
+          ]
+        },
+        {
+          "key": "2168f393b4dac6bc9b42f5f1e6a638ae374b66a12c1a49fd93528a95aff495cd",
+          "hashes": 9,
+          "contracts": 9,
+          "sdkVersions": [
+            "22.0.7"
+          ],
+          "sample": [
+            "034af7f5661f4c30585a5a3454844a06c4859f5e275d29a6faa9b053f39febfe",
+            "375bd32e521512407d015ef9a846b7c7a37d5054fa00dd5647f76876cb7c3b4d",
+            "5a0b997df68146ed258c2d781aff3a6579cf97f8c0e7341895e5df425b28aeb8",
+            "61a8c28007732dc52bbbb2c8aa3b880c839594ad45ab85de1fab671bbcae9b0e",
+            "8f79e8d49e1513486501c6265ee93f2c177e8f450e2039444646ea6e08ce5de4"
+          ]
+        },
+        {
+          "key": "516ce6f71100e0c1b15ac4d21130372a15ff51ff82c6e6c221d5c39e8eac09cd",
+          "hashes": 9,
+          "contracts": 100,
+          "sdkVersions": [
+            "20.0.0",
+            "20.2.0",
+            "20.4.0",
+            "20.5.0"
+          ],
+          "sample": [
+            "708cc40d6e46fc5134a76b914220b4694bee8f13e0b8b2cccd7aaadea19b457c",
+            "7273bcec1841fc67bdb486aac92d76ca8d0f339b4d916b5e1c7a818d5ee9bc41",
+            "900c33b69cbe34748df4443f7681775a02b30599e3bab9c7c9f8b3225a3b1f1b",
+            "93c5e22d071a330e789bc6a62409a87a0c05966273977e22fcabfc57e834f548",
+            "c695d8556eb33d82a422ba73d100261d7e0be22579e04e94cb1910fdcb7d9cf1"
+          ]
+        },
+        {
+          "key": "0c8303349f9e0efce17c88c7231f6401ca9fe5be289337c76d0f5978d0daeeb1",
+          "hashes": 8,
+          "contracts": 11,
+          "sdkVersions": [
+            "23.1.0"
+          ],
+          "sample": [
+            "0a9a17a88c4a2a0bd9c090b2701382faf1f2f2ae00b2d1d12c03f9a07de74ad5",
+            "229a60b519e2e27b2bfc34488f3e717cfd22ffad9300e08bddf5b146ff7551ff",
+            "3bd714d035fdc8468194f68aef1a5c021c8d59e20012950337a4f35407e604ba",
+            "6c3e02ad2101fd33cb6f2a79cdc02e4fda3b53f3817053c1452ed113502c9eb9",
+            "6decce7493373699d72f6aab15556b268b5d1f0b88fa0c47cef7f1dd1eccbbcb"
+          ]
+        },
+        {
+          "key": "803c0b82f4792bce7f1ff6676dab1d80dd2247f9021c335dfb776833a8752393",
+          "hashes": 8,
+          "contracts": 13,
+          "sdkVersions": [
+            "21.7.7",
+            "22.0.7"
+          ],
+          "sample": [
+            "02f8392683b30e34ca543fbd48062562607e5d57bb8203113c5d09aad64ce455",
+            "0c4e7755b1679ca2ab1e59dbed6266d9c69594124e9648653d2ea02c8c4c59e0",
+            "3d19336d8b3c5e20a8208a95445736dda55bf4aa780bd0fcd71c66f06b8bdf48",
+            "4dc63eb6f50fde1f730e8e7547f727ececa2ee2a6a2dd2c43691eb4ed2522781",
+            "662b29c0a3dee2b0faa0fabb04359d03f163ad3d3d1a1f53c9986337678ce347"
+          ]
+        },
+        {
+          "key": "8e29394eda941acb2c64ddf4c15c6ad437ebe569d4b0075bc01d52f329cba474",
+          "hashes": 8,
+          "contracts": 16,
+          "sdkVersions": [
+            "(none)",
+            "20.2.0",
+            "20.3.1",
+            "21.7.7",
+            "22.0.6",
+            "25.1.1"
+          ],
+          "sample": [
+            "0b4d8db29605a780a3df25aea579a9cc8b65478cd5775d75778a7d8e2dda5327",
+            "28af3ba792072c1a7ab7ea3c3bc32ee44cb45359ba17fbc9660042f5d4d43815",
+            "36a04bb8f3c84acf130e1213f4ae96775e9cde9946d07a3d6f2e9a0cb975cc21",
+            "531cf29e9893351a579a14a316c89a6ef8cf9ecfa3078049d36079be83c25d81",
+            "6c5a20825c0ff9fc639e53ae07cff68a36097c8de168335425967b23aa248750"
+          ]
+        },
+        {
+          "key": "c79f29079fbfd49e056448b9cfdd0515dbf0734b8b5c17e771be2b5079a54c47",
+          "hashes": 8,
+          "contracts": 12,
+          "sdkVersions": [
+            "23.5.3"
+          ],
+          "sample": [
+            "2a6866c1850dc7c2ac131c4bba925d476c4179cbb731092fb555a55a654a9c44",
+            "3d69970c585285e627babdc2ab69e087e4542bd9ecc07a277b28bcea56912571",
+            "782da988a06ef049c709e5a1d505b86f3f856616bb9c45b203eb345c0f095253",
+            "837a8eb20736543069b2417b20e4b40d97fb1a6c4a80efbe783f5f6ac46f998b",
+            "b1a6152161a54be7a97c80b3156ca9a6a01416ed7bc35e660b5e322309c194c6"
+          ]
+        },
+        {
+          "key": "5f42efb8a751f35ded80ba7ee98ac3b5f32e5eaae8d91baec69969709230723a",
+          "hashes": 7,
+          "contracts": 16,
+          "sdkVersions": [
+            "25.1.1",
+            "25.3.0"
+          ],
+          "sample": [
+            "30d1c4c48d1e11dc277a1cfecc040fb39d4dd426124296e48a2b630bacac9384",
+            "6dc90cf14dacede165c42b99b7c7e3ba5fddc9c403b16f5f232833d37ef6862d",
+            "8b0bf09c784042c7ba0975e4e58f8037a78f0ffeccf9bcaf903476e9496f6bfb",
+            "9410ac84392abff5c805df7636e4988a8f40b4f2e403f8f97a7116d3ff0c70f6",
+            "95193c1d1efc4d6fe58c92b66638e86565fcbb6a3528e1db0bf91ea1cd583f1b"
+          ]
+        },
+        {
+          "key": "60e6d0fcd868b216061836c447da5cad6876f35018cc2fd321e1c1fb4cd46936",
+          "hashes": 7,
+          "contracts": 8,
+          "sdkVersions": [
+            "20.5.0",
+            "21.7.7"
+          ],
+          "sample": [
+            "06f1617092e949f6c3fb9e8383048c000d8d61759deff79247ab3c8e207403df",
+            "0d3bdd40606105a1b81b697cede65ca546bef6da78255a0719cc42af93692f97",
+            "1a10a79ca9c5e69789bff88a0f79c2e2917871d0f3cdb62145267254922e8609",
+            "4713af123f167e0b5689f485d57693d791393931ef45bd1e75e763d3a57ee5ce",
+            "54559baabc714e73daa5bd377b509f31f00b226166d2296b53bf79e5109556c6"
+          ]
+        },
+        {
+          "key": "780ee9b81fbaacf9fe53766433fd92fbc371faff5c5017d1b19a9da188735259",
+          "hashes": 7,
+          "contracts": 5538,
+          "sdkVersions": [
+            "22.0.3",
+            "22.0.7",
+            "23.0.2"
+          ],
+          "sample": [
+            "b0d078f848df87f990bc42d3bd973a2a8de5a86ea99e9b707bcf2a7bd9f2a1b1",
+            "b62f62217ff256d557513793e9e44317b25b14401a8a6b6149a04d38d72d6c7c",
+            "c5509dfa5f022deb8ae621f073adac5fd788feca0b24d15b5f392ab22c2ff222",
+            "dec58db6464410b15bbed473e0aa5fb616cb9f6b6aea379ae392cb8ebf9670c8",
+            "e45c42b944a767bd5f37f8c4a469b48917d28e23481dbfd550419c84cdacde92"
+          ]
+        },
+        {
+          "key": "bac2d972ca8c9157beff65df00f93e6078fdfa4abec93b4e726bed73d40bf548",
+          "hashes": 7,
+          "contracts": 8,
+          "sdkVersions": [
+            "21.7.7"
+          ],
+          "sample": [
+            "004c04bc1664c25e1694e1c0dd2f2649ccea217f6ca8f7a7566e0cb360a2398f",
+            "17905dfba425b340c9f52e547b1ad1dfd0ff70156a4854426856022f3d543ff8",
+            "1863d95f609cadd95a557550ad6bdc05a443304fb69fb1d110e7874ea27a1ab2",
+            "2460db9d5cd0e7c1449a706ce21113207e68c925aad855a4e8a1cc9e594117be",
+            "5715fbed22165e548f54fc3b1285d9d010a5fdc130cd1b619c0d336376bd2f46"
+          ]
+        },
+        {
+          "key": "cbdc2c752703e37ab30f29ec4fb44e2204e6de515f5acddbedae8af43aaef874",
+          "hashes": 7,
+          "contracts": 19,
+          "sdkVersions": [
+            "20.3.1",
+            "21.4.0",
+            "21.6.0",
+            "21.7.4",
+            "21.7.7"
+          ],
+          "sample": [
+            "55008af516d6b91df0230014987b2249b0286859fe7cff345382dc2eb6b147b0",
+            "5d34e7d64a95c4c9d23140de8459581345858edfa1045b3157ae6241034dedeb",
+            "762c4fd476047334aedd24204d9abe9898174ef0c1f1f170827318b02e7f3d10",
+            "b35c14919180f1cc5be312b28e0d5a9ac9f112dc6dee799f52188b6826fdd2c4",
+            "c6e7e28b917632bbde7fd662cb63c064ca5faef85dbf35c8f2b6c7cd7c89e945"
+          ]
+        },
+        {
+          "key": "25b4ac73016d29fae54ac135ed8c80fc47e1bc9bb67c2f1842cf3c9ea1ea2d03",
+          "hashes": 6,
+          "contracts": 6,
+          "sdkVersions": [
+            "22.0.7"
+          ],
+          "sample": [
+            "44971b590434b69352774b5f425f750b62512e2ee638b68a1871c83ed23739dd",
+            "6c486f586a9079dca056c495335e341c3ac5c017b3e3a78110025a5a39bfbf85",
+            "adc84e97e20ed84cc860f8a5bc7cc9e164e67c24be379d8c57e5495a046dcde9",
+            "c42f10a9999e30fd491a40f9232b0cd2555e04ad5024f4bbd20e4c01f098c138",
+            "d1340ea680c4bc45be21997554cb5d37421a9290bc20fa50f2ede79029a77f8d"
+          ]
+        }
+      ]
+    },
+    "sameSpecBytes": {
+      "distinct": 3497,
+      "groupsWithDuplicates": 435,
+      "hashesInDuplicateGroups": 1129,
+      "largest": [
+        {
+          "key": "08add3a29b3579446dc004afdfb8305966a6fbc373c4a422f191d4278cc7d548",
+          "hashes": 14,
+          "contracts": 40,
+          "sdkVersions": [
+            "20.5.0",
+            "21.7.4",
+            "22.0.5",
+            "22.0.6",
+            "22.0.7",
+            "22.0.8",
+            "23.1.0",
+            "23.5.1",
+            "25.3.1",
+            "26.0.1",
+            "26.1.0"
+          ],
+          "sample": [
+            "073b070eaf32b07ffd4ab83704dee2207adf1416d1b254d3fe999caf7d22ff06",
+            "0837462232e532f98f540a531e407868c90b0f101bbf7d3538246aa0b4fe547d",
+            "2947d39cb28bf34dda3ebb6ff4b31a7a51d4e88dbcae0158fefb4f0931f02487",
+            "37619824f970d1ff5ad6d2d2472a9af9e2eb3db14778469c2b231c4d9e37be54",
+            "61db354e1479556eac04f5f45d30f3a3c06c9847c512cc53fcbe320a6cdb8818"
+          ]
+        },
+        {
+          "key": "e033f05ae01a843be5f4d5af8e73ba32d85903e20b1ccb70528a6a354f56bff7",
+          "hashes": 12,
+          "contracts": 25,
+          "sdkVersions": [
+            "20.2.0",
+            "20.3.1",
+            "20.5.0",
+            "21.1.1",
+            "21.6.0",
+            "22.0.7",
+            "25.1.0"
+          ],
+          "sample": [
+            "0b1452c7f942b0879bab79dc5ffd15077ccbd5909ff806371660a0c7b43d88ed",
+            "1cf1ad98b51444c86d78bb526594f7380ecaf243db3aee807a2e4813ecec62e5",
+            "407e01ee25a9ef57784eea8436d323e8388b4f4f335ae601bba269cdb69f2b73",
+            "4c482f2d41663439cdfee66be122829eb47ed1b492588abc9272a97c93410a45",
+            "50e5b8b4ec13ddd04ddcb2454c66ec0b1855622bfba29355e2d6e18d7a6ba9af"
+          ]
+        },
+        {
+          "key": "5185bf6d1c3bc30b5ab1198b0a8e069c3ea98cd48245f3221224f708e4899c72",
+          "hashes": 9,
+          "contracts": 100,
+          "sdkVersions": [
+            "20.0.0",
+            "20.2.0",
+            "20.4.0",
+            "20.5.0"
+          ],
+          "sample": [
+            "708cc40d6e46fc5134a76b914220b4694bee8f13e0b8b2cccd7aaadea19b457c",
+            "7273bcec1841fc67bdb486aac92d76ca8d0f339b4d916b5e1c7a818d5ee9bc41",
+            "900c33b69cbe34748df4443f7681775a02b30599e3bab9c7c9f8b3225a3b1f1b",
+            "93c5e22d071a330e789bc6a62409a87a0c05966273977e22fcabfc57e834f548",
+            "c695d8556eb33d82a422ba73d100261d7e0be22579e04e94cb1910fdcb7d9cf1"
+          ]
+        },
+        {
+          "key": "9a19b0140e20ba760a7d7ab1e2b179bdde4dd1337cc9765aab9967fde9a4ca42",
+          "hashes": 8,
+          "contracts": 12,
+          "sdkVersions": [
+            "23.5.3"
+          ],
+          "sample": [
+            "2a6866c1850dc7c2ac131c4bba925d476c4179cbb731092fb555a55a654a9c44",
+            "3d69970c585285e627babdc2ab69e087e4542bd9ecc07a277b28bcea56912571",
+            "782da988a06ef049c709e5a1d505b86f3f856616bb9c45b203eb345c0f095253",
+            "837a8eb20736543069b2417b20e4b40d97fb1a6c4a80efbe783f5f6ac46f998b",
+            "b1a6152161a54be7a97c80b3156ca9a6a01416ed7bc35e660b5e322309c194c6"
+          ]
+        },
+        {
+          "key": "1c6470c54903e6e7a15631cbc17d0f95e162c3894c0c2f0dbb8928aa85f2b71b",
+          "hashes": 7,
+          "contracts": 19,
+          "sdkVersions": [
+            "20.3.1",
+            "21.4.0",
+            "21.6.0",
+            "21.7.4",
+            "21.7.7"
+          ],
+          "sample": [
+            "55008af516d6b91df0230014987b2249b0286859fe7cff345382dc2eb6b147b0",
+            "5d34e7d64a95c4c9d23140de8459581345858edfa1045b3157ae6241034dedeb",
+            "762c4fd476047334aedd24204d9abe9898174ef0c1f1f170827318b02e7f3d10",
+            "b35c14919180f1cc5be312b28e0d5a9ac9f112dc6dee799f52188b6826fdd2c4",
+            "c6e7e28b917632bbde7fd662cb63c064ca5faef85dbf35c8f2b6c7cd7c89e945"
+          ]
+        },
+        {
+          "key": "46cb71494e8e4d98123ef3482384c17b03b5060c052bc82e9ddb69d358aa5659",
+          "hashes": 7,
+          "contracts": 10,
+          "sdkVersions": [
+            "23.1.0"
+          ],
+          "sample": [
+            "0a9a17a88c4a2a0bd9c090b2701382faf1f2f2ae00b2d1d12c03f9a07de74ad5",
+            "229a60b519e2e27b2bfc34488f3e717cfd22ffad9300e08bddf5b146ff7551ff",
+            "3bd714d035fdc8468194f68aef1a5c021c8d59e20012950337a4f35407e604ba",
+            "6decce7493373699d72f6aab15556b268b5d1f0b88fa0c47cef7f1dd1eccbbcb",
+            "723a725b9b27848fad9e71b2e3872e222c196f4b7fbfd3d921f8a49fefc44d65"
+          ]
+        },
+        {
+          "key": "58540845f8c744d31e418cb5a5462f00b46e81e13b95c48a2923c6ccafa7a93c",
+          "hashes": 7,
+          "contracts": 16,
+          "sdkVersions": [
+            "25.1.1",
+            "25.3.0"
+          ],
+          "sample": [
+            "30d1c4c48d1e11dc277a1cfecc040fb39d4dd426124296e48a2b630bacac9384",
+            "6dc90cf14dacede165c42b99b7c7e3ba5fddc9c403b16f5f232833d37ef6862d",
+            "8b0bf09c784042c7ba0975e4e58f8037a78f0ffeccf9bcaf903476e9496f6bfb",
+            "9410ac84392abff5c805df7636e4988a8f40b4f2e403f8f97a7116d3ff0c70f6",
+            "95193c1d1efc4d6fe58c92b66638e86565fcbb6a3528e1db0bf91ea1cd583f1b"
+          ]
+        },
+        {
+          "key": "e062fb8a14e07955093b4c041c20569f654d41abd623027b207bd375ae10fd5b",
+          "hashes": 7,
+          "contracts": 8,
+          "sdkVersions": [
+            "20.5.0",
+            "21.7.7"
+          ],
+          "sample": [
+            "06f1617092e949f6c3fb9e8383048c000d8d61759deff79247ab3c8e207403df",
+            "0d3bdd40606105a1b81b697cede65ca546bef6da78255a0719cc42af93692f97",
+            "1a10a79ca9c5e69789bff88a0f79c2e2917871d0f3cdb62145267254922e8609",
+            "4713af123f167e0b5689f485d57693d791393931ef45bd1e75e763d3a57ee5ce",
+            "54559baabc714e73daa5bd377b509f31f00b226166d2296b53bf79e5109556c6"
+          ]
+        },
+        {
+          "key": "ec3ef24e0cd9712993e0ef04245d29b883cd28fbf8e422821571ed38b476fb1d",
+          "hashes": 7,
+          "contracts": 5538,
+          "sdkVersions": [
+            "22.0.3",
+            "22.0.7",
+            "23.0.2"
+          ],
+          "sample": [
+            "b0d078f848df87f990bc42d3bd973a2a8de5a86ea99e9b707bcf2a7bd9f2a1b1",
+            "b62f62217ff256d557513793e9e44317b25b14401a8a6b6149a04d38d72d6c7c",
+            "c5509dfa5f022deb8ae621f073adac5fd788feca0b24d15b5f392ab22c2ff222",
+            "dec58db6464410b15bbed473e0aa5fb616cb9f6b6aea379ae392cb8ebf9670c8",
+            "e45c42b944a767bd5f37f8c4a469b48917d28e23481dbfd550419c84cdacde92"
+          ]
+        },
+        {
+          "key": "0ffd23ed1ae5e50f658bc8d8d761e615c54fc9c3c6899945ee20f8760482774d",
+          "hashes": 6,
+          "contracts": 6,
+          "sdkVersions": [
+            "22.0.7"
+          ],
+          "sample": [
+            "034af7f5661f4c30585a5a3454844a06c4859f5e275d29a6faa9b053f39febfe",
+            "375bd32e521512407d015ef9a846b7c7a37d5054fa00dd5647f76876cb7c3b4d",
+            "61a8c28007732dc52bbbb2c8aa3b880c839594ad45ab85de1fab671bbcae9b0e",
+            "aade985c19b718eac84b21b1f75f83a5e49bf7cb7f2524a192d62c5fb7d08822",
+            "d62efe5ab89c35fb1ec0faa73d41a710c4b6a605ae6638b8d016d575200520e1"
+          ]
+        },
+        {
+          "key": "2a738b7ee454298cfec4bf8dafd541e6943620d883e54429522f3e9c61dfe817",
+          "hashes": 6,
+          "contracts": 8,
+          "sdkVersions": [
+            "22.0.8"
+          ],
+          "sample": [
+            "0744aa1fbfb2f5f45a646655731285ec2277b235549e2365c7c4e385304b8539",
+            "102905d9c86470c5b569d7a25e98aee81cdc14be47ec8bf880754798ea8d1126",
+            "26fc3c08d9a9f35096f84c00235a59ff09be8855caedd3f302f47688a618b2a5",
+            "932df6b6bba88998d97d836c23fb841378292c3b1954a8dde65a7dc549ed124d",
+            "ede5bcb01c335d9c39446877f31ff449b4343be06a52c17a2d07c1eb51f1f989"
+          ]
+        },
+        {
+          "key": "3ae83ba6091e6ef84ed567b1f98c3396b36e2cc764d737f6f224c9c7534b595a",
+          "hashes": 6,
+          "contracts": 9,
+          "sdkVersions": [
+            "25.1.1"
+          ],
+          "sample": [
+            "0878e15746cd3cd8ca6739e64a30422d797cdfd347d3b70698de10570bb9d630",
+            "265e727291adc3fc8566fc7abd55ffb0f311e0b3bd85896dfde27e78749c65fe",
+            "4b6e32489d58e0d54cd83c1c1123c714a69a271a6674e1522ab346e28d0c10aa",
+            "7b7bd05b90e8cb8a337c290b487943786c4b0612485839ef22faa0c7b6992efa",
+            "bf9358ac2e188d74a695cd6009929735f90e8c891f922a9de5fcdc7037af255e"
+          ]
+        },
+        {
+          "key": "84a49328dc35012d99abe81523261af8f226cfb57bf403dc5852a06bb3e01f22",
+          "hashes": 6,
+          "contracts": 13,
+          "sdkVersions": [
+            "(none)",
+            "20.2.0",
+            "20.3.1",
+            "21.7.7",
+            "22.0.6",
+            "25.1.1"
+          ],
+          "sample": [
+            "0b4d8db29605a780a3df25aea579a9cc8b65478cd5775d75778a7d8e2dda5327",
+            "36a04bb8f3c84acf130e1213f4ae96775e9cde9946d07a3d6f2e9a0cb975cc21",
+            "531cf29e9893351a579a14a316c89a6ef8cf9ecfa3078049d36079be83c25d81",
+            "6c5a20825c0ff9fc639e53ae07cff68a36097c8de168335425967b23aa248750",
+            "78ad3434f6dadb39c9810592ee3e5f2522e2d8a95ad4a1b5731e6c224f7bd161"
+          ]
+        },
+        {
+          "key": "ef35ba4f461c5ac3c565d256e394ee787c45c74b569965d015e566d50acb6b2f",
+          "hashes": 6,
+          "contracts": 6,
+          "sdkVersions": [
+            "20.5.0",
+            "23.1.0",
+            "23.2.1"
+          ],
+          "sample": [
+            "00ad44c763aa2dfb23723c411be473f651139515d6c847c3702f3cba59de27a6",
+            "09025cd98dc3642c978dc241409788eb28e5b7df1761078ef1363f6ef363bf67",
+            "73cc8dff0e568ccae02cbcf0c5971be9c9b269dc1c1adf3f6107412b38f114a4",
+            "7a564cbe1ec0388ad915eb7844eb46580107d25b114e21a9540cab0ac93b7d0d",
+            "9379b6c19a284c0b16b9907791d922e3b4e915e2cec909401c1503974f2e511c"
+          ]
+        },
+        {
+          "key": "ff50f68b964cd3251bf3ef71618fdff7342c0f7792f36b225c22bf6218160abe",
+          "hashes": 6,
+          "contracts": 7,
+          "sdkVersions": [
+            "(none)",
+            "20.3.2"
+          ],
+          "sample": [
+            "235a706073c2cfc5d1a88b533349e5c7819bb16ae6f1d8c5f7414d990eaa4581",
+            "286f4fc9deebdfb306cbd533f4cbea75c24c746f9fc4481e4dab0b4738e3797d",
+            "3aea65ff1e6f584e8987b61c641e090a33ec45512013c78bf6324c356332aa98",
+            "6c4abe57ad2f83905e74a334a0b0c8191a2cc8bfb59ea46c95e4f84fe1c45697",
+            "9d5cd9c146c23b2044aa077f29c7f77e83c34fd69268295ca4856e4e86e5f807"
+          ]
+        }
+      ]
+    },
+    "sameCodeModuloCustomSections": {
+      "distinct": 4104,
+      "groupsWithDuplicates": 78,
+      "hashesInDuplicateGroups": 174,
+      "largest": [
+        {
+          "key": "6ad61a638324bdb1af2263a4da7a1d95b1cec53fbd6182094f0a56fb3632576c",
+          "hashes": 5,
+          "contracts": 17,
+          "sdkVersions": [
+            "20.2.0",
+            "20.3.1",
+            "20.5.0",
+            "21.6.0"
+          ],
+          "sample": [
+            "0b1452c7f942b0879bab79dc5ffd15077ccbd5909ff806371660a0c7b43d88ed",
+            "1cf1ad98b51444c86d78bb526594f7380ecaf243db3aee807a2e4813ecec62e5",
+            "407e01ee25a9ef57784eea8436d323e8388b4f4f335ae601bba269cdb69f2b73",
+            "51ac3adc6dc4d7ecf22ba7b0d174e424c51857f7d67936b09077b6240edbeb79",
+            "f2f8cf7c666bfd5b4ce017051d96c18ea5a721d0aa1344ebf98287d6793a1131"
+          ]
+        },
+        {
+          "key": "d440946984542453344ee8833c996f6890b1dc8f16929c7dc6aeda1659acde04",
+          "hashes": 5,
+          "contracts": 9,
+          "sdkVersions": [
+            "23.1.0",
+            "23.5.1",
+            "25.3.1",
+            "26.0.1"
+          ],
+          "sample": [
+            "6d661991960c4462d165c7e799b08e9b89c8cf1ebaac547e3e05d49d1ddbc8fc",
+            "a3746b42baf01a2312a8ec4d9ebf3b4f29348f632f43cc289a4d107cfaf6a2be",
+            "bfe97bb7d5deeb0ececc75379d0bbd048d74429f51f26a059f019a91848a3a65",
+            "e71a63be646f4ea31c60ae1f420673c3185cd3b8d5beb532b432efa8ac43a415",
+            "f650c1b45ac30aa3d06b11d97090e9c5f276ff4b7ac6fe8698b3f63f44b9e36d"
+          ]
+        },
+        {
+          "key": "64cee2f8ab3b3a65f0d34d69b992012281643f1fa7e541ec293030dc434de71e",
+          "hashes": 4,
+          "contracts": 4,
+          "sdkVersions": [
+            "20.0.0",
+            "20.2.0",
+            "20.3.2"
+          ],
+          "sample": [
+            "410eaffd7826d97b47291cfe7f883268b0463c1c85e767c389734155061c1105",
+            "61f3ec45073b00a29bce98268932a9dcfa4f803efd2a425e0938d44047608b4d",
+            "9c50189157c4ea350e8f8fa8476fcc4776f43f8b408221340b2837f87d4e3f09",
+            "a8b5b5f504971e8bf84c159f5be3ffc982946ed41c6ffd6ea4728b07b574047c"
+          ]
+        },
+        {
+          "key": "d8c94d5c3c3a748ff95bea6958711d5cdf7a2a207f3abc3700fcccc9879f7e0f",
+          "hashes": 4,
+          "contracts": 4,
+          "sdkVersions": [
+            "25.1.0"
+          ],
+          "sample": [
+            "50e5b8b4ec13ddd04ddcb2454c66ec0b1855622bfba29355e2d6e18d7a6ba9af",
+            "6ada72380e9f86661f21b46437071024c96e015c5a5671ebd9ba9d0ff1b193ff",
+            "e7089d989d23d43e03b169b5be9649bc4f67c67685b8bc042da0adac21a4eb08",
+            "ff3fb5ef9e9de46dffc51190ca3b14e12bec753973438205ca1a8f9ef7301605"
+          ]
+        },
+        {
+          "key": "e69ae8d4c0bbc0a5294f446300270f7659a772cb25ab8d1be4c705c350d990ac",
+          "hashes": 4,
+          "contracts": 5,
+          "sdkVersions": [
+            "20.4.0",
+            "21.1.1",
+            "21.7.7",
+            "22.0.6"
+          ],
+          "sample": [
+            "30133812a34f3b3d2aa680dc9623ac89f0eb7427f70fbb15907d35167aa5e9c3",
+            "50ff2fc90650b23b331cb4f20c80f647d29dacfda24cc395f9ba5850c3d4ab0c",
+            "6e9661776c66eb01e4ee574abc764068532fc5444c6e4abb92404e90122b5bcf",
+            "fe900345f7101eb541282fdd595e57eaf281184e14795480188b6d87a598e5cf"
+          ]
+        },
+        {
+          "key": "830d9c35fbe54c0539684621f61c5173ce5fb8da29da4d47d2fd88c5814dabe4",
+          "hashes": 3,
+          "contracts": 12,
+          "sdkVersions": [
+            "20.3.2",
+            "20.5.0"
+          ],
+          "sample": [
+            "58f3e6a1d1d38eda9976e0e4db0b537d73c126773e4f48e97301582041d1da6c",
+            "f4638650fa5f4ec5d79a232006b99602339ed44b5c880575a322b7b05dcf1e52",
+            "f786ecc0de98f9c9e8d151d7ad7e82eb2a3afd4b8880c20f07ee51141a24cedc"
+          ]
+        },
+        {
+          "key": "85293f068b2de736064519d2d72242e43e48581051f61655a01e2be735464146",
+          "hashes": 3,
+          "contracts": 5,
+          "sdkVersions": [
+            "23.0.2"
+          ],
+          "sample": [
+            "67d1d9e4b61fbf2038af20f0838eb0600f87de50a05ee9bc4e23e52427ed9261",
+            "d31b9d0aaab30af7247d7de53618b6793d806032728ef21d08262ddd8e11917b",
+            "f22e4a52893d04b277c79bd19b3ff0b8771e1c0ca396a35d9339dd3a027ae299"
+          ]
+        },
+        {
+          "key": "92d887faa784f0b815427d8e214841394ec4aeb2a20947b5aac05dc40a8bf959",
+          "hashes": 3,
+          "contracts": 8,
+          "sdkVersions": [
+            "22.0.8"
+          ],
+          "sample": [
+            "d2f32d45cf25458862bcac3ba6d34c61cb747303e706f42ff097594e1816d730",
+            "f66c2ce4bf7d37ab858642b259c1c5ab294becea4ee7fc8380b249cbf21671b3",
+            "fb4f88ab8f745ff8db7fe65efc49ff2ce9a87c13dd66ee862ab4671c55af7d95"
+          ]
+        },
+        {
+          "key": "a96587ac0b788aa4046f209483a900514f9a8fffda051b24a5e8a8b522aa2672",
+          "hashes": 3,
+          "contracts": 25,
+          "sdkVersions": [
+            "22.0.8"
+          ],
+          "sample": [
+            "606b6c95ae37aa0d0dc763d67f3073e1ee58371222715ab6e3c55fd62af61659",
+            "6b9ef0f570e482869fc5b42bad0e045a20c0c813bdd9e2fd25849dcf62919535",
+            "de453b6db413a3793b8b944121a0b989c7acf160cd6df078c0dc92f720f81279"
+          ]
+        },
+        {
+          "key": "b6755cebc196b0352fe6e8b490466efad54c3d2cf8ddcecda063fb1842e72223",
+          "hashes": 3,
+          "contracts": 3,
+          "sdkVersions": [
+            "22.0.7"
+          ],
+          "sample": [
+            "01cfbd28e984de234c5fa3e91713d2304159fe00df2acdc58594a4cc3674a7f3",
+            "3a6d3db17f5dd76d4c900bda3556d43cd6503e55469e0e93619327e053f2fff8",
+            "d974b093835b0db3f3823736dbc03b1c75942e771a5eb84da3acc21add807862"
+          ]
+        },
+        {
+          "key": "bf15f214d0435579ea0dbffd8d77459c1682f8d4e170e4fa01eaa948dc31883f",
+          "hashes": 3,
+          "contracts": 4,
+          "sdkVersions": [
+            "21.7.4",
+            "22.0.6",
+            "22.0.7"
+          ],
+          "sample": [
+            "61db354e1479556eac04f5f45d30f3a3c06c9847c512cc53fcbe320a6cdb8818",
+            "ce961028321c9bfccd750a47e269160db42b20c220cecc21564d21c29058ea2f",
+            "f044f5042371e75d19a6677d618a2e463699e16929f0e351b19b04c1bdb5691a"
+          ]
+        },
+        {
+          "key": "07189657266a1ed65ab8bcb8e7ef6363373ca9c56a5378205efcf6bbf748e161",
+          "hashes": 2,
+          "contracts": 2,
+          "sdkVersions": [
+            "23.4.0"
+          ],
+          "sample": [
+            "4be4128083fb36a873d3e6077d5f8aaa69ee13bec5a3516d911a45cc1ca82bbb",
+            "72339ef3ba24b940e9afbab7dc472590385eba622c2f91f8d44efdbfda72fe65"
+          ]
+        },
+        {
+          "key": "086ad68acebc0d90d234831feb1e179f72c0b849570298cbaebcabdd89aecbb0",
+          "hashes": 2,
+          "contracts": 6,
+          "sdkVersions": [
+            "22.0.8"
+          ],
+          "sample": [
+            "dd9e742c2e014ade334438f00ecf243b572ed5b1d4c590c099eb1e148e2aa40e",
+            "e6aa2c89dc883419caac57006eb88c4829c5deaacc8577da4fec571080a1c79c"
+          ]
+        },
+        {
+          "key": "0f6a5882c13f2af8acfc575f1996f55a11014e23a16f923ceda36b25fd1e2acc",
+          "hashes": 2,
+          "contracts": 2,
+          "sdkVersions": [
+            "22.0.8"
+          ],
+          "sample": [
+            "0e96c1688d5cf9b667562291d498610666710ca2632a33cdf9ef6397ca6fc7e1",
+            "6fb32da225499d2e9e9f478a0687b98989e82e8c000f553ebb7285c2f7372516"
+          ]
+        },
+        {
+          "key": "11e1e9d0a44afb366958e6f3fbf906937d72f5058a93f1411629da623dfba60a",
+          "hashes": 2,
+          "contracts": 2,
+          "sdkVersions": [
+            "21.7.3",
+            "21.7.6"
+          ],
+          "sample": [
+            "4f840be85e0667438392a66fe200350bde8f4085c3aef9ecaf3bd552d1533bd1",
+            "80baa838de7f753d460e2407ff6f3692bd6d1b529929bb283db1c4ddcdda837f"
+          ]
+        }
+      ]
+    },
+    "sameInterfaceDifferentSpecBytes": 87
+  }
+}
