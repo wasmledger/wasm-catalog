@@ -1,0 +1,17 @@
+{
+  "format": "sik.wasm-catalog.fixture-provenance/v1",
+  "kind": "synthetic",
+  "generator": "scripts/make-synthetic.ts (src/specenc.ts)",
+  "note": "Our own fixtures: Wasm modules made only of custom sections, no code. Not captured from any network.",
+  "files": {
+    "full.wasm": "e51c0553477e80f7e617000eaa3adc99c2b910a1961d8f0273e11766f9274a6b",
+    "full-nodocs.wasm": "60f8049c4f34870dc07c3821d2b7f003a7550fe8371f7f344c5743a5e08d3015",
+    "adversarial.wasm": "bcc01b7e9484e85ecf98533d36877c76d4b01b3e417e02127f93f89d7f52f357",
+    "multi-spec.wasm": "4c7be1b94dac0a6d468e35be9cbe66b2f96261ec3b6d50f85187a46bf2b79646",
+    "no-spec.wasm": "5ee5731b24439cf2399eebdaa464d500646874c1259a0ea5d73159c006adc335",
+    "over-limit.wasm": "f53bd783a3cd49ba8bf1066491d32c1f99b13180be6b27461369de8d4b9ab957",
+    "trailing-garbage.wasm": "aa57d630d0aacbc6c5cc3b040846335ec6cbadba22f0375597feaa3959eb6eec",
+    "truncated.wasm": "8a6dd114d4b87a6011e1dd10f604773d23d8af323751e1f4f4e242db9fa6e62b",
+    "not-wasm.wasm": "741224522229eff06088f09daeabf7f26d799504e6ca974fefee3fcdec605d93"
+  }
+}

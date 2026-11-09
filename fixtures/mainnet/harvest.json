@@ -1,0 +1,519 @@
+{
+  "format": "sik.wasm-catalog.harvest/v1",
+  "generatedAt": "2026-11-04T00:51:35.679Z",
+  "params": {
+    "rpcUrl": "https://mainnet.sorobanrpc.com",
+    "seStrata": 16,
+    "seFull": false,
+    "seMaxPages": 2000,
+    "seTop": true,
+    "eventWindows": 24,
+    "eventLimit": 1000,
+    "maxHashes": 400,
+    "crossCheck": 200,
+    "seWasmFallback": true,
+    "seed": "wct-2026-11-04"
+  },
+  "provenance": {
+    "rpcVersion": {
+      "version": "29.0.1-055dc9c7a9a9e038c6807a555c09bd94b85c9e2c",
+      "commitHash": "055dc9c7a9a9e038c6807a555c09bd94b85c9e2c",
+      "buildTimestamp": "2026-10-13T09:48:37",
+      "captiveCoreVersion": "stellar-core 29.0.0 (4eb83337380a29ad0907f4e32196ce97b8dc7649)",
+      "protocolVersion": 29
+    },
+    "latestLedger": 65293477,
+    "oldestLedger": 65172518,
+    "eventWindows": [
+      {
+        "startLedger": 65172528,
+        "events": 1000
+      },
+      {
+        "startLedger": 65177563,
+        "events": 1000
+      },
+      {
+        "startLedger": 65182599,
+        "events": 1000
+      },
+      {
+        "startLedger": 65187635,
+        "events": 1000
+      },
+      {
+        "startLedger": 65192671,
+        "events": 1000
+      },
+      {
+        "startLedger": 65197706,
+        "events": 1000
+      },
+      {
+        "startLedger": 65202742,
+        "events": 1000
+      },
+      {
+        "startLedger": 65207778,
+        "events": 1000
+      },
+      {
+        "startLedger": 65212814,
+        "events": 1000
+      },
+      {
+        "startLedger": 65217850,
+        "events": 1000
+      },
+      {
+        "startLedger": 65222885,
+        "events": 1000
+      },
+      {
+        "startLedger": 65227921,
+        "events": 1000
+      },
+      {
+        "startLedger": 65232957,
+        "events": 1000
+      },
+      {
+        "startLedger": 65237993,
+        "events": 1000
+      },
+      {
+        "startLedger": 65243029,
+        "events": 1000
+      },
+      {
+        "startLedger": 65248064,
+        "events": 1000
+      },
+      {
+        "startLedger": 65253100,
+        "events": 1000
+      },
+      {
+        "startLedger": 65258136,
+        "events": 1000
+      },
+      {
+        "startLedger": 65263172,
+        "events": 1000
+      },
+      {
+        "startLedger": 65268208,
+        "events": 1000
+      },
+      {
+        "startLedger": 65273243,
+        "events": 1000
+      },
+      {
+        "startLedger": 65278279,
+        "events": 1000
+      },
+      {
+        "startLedger": 65283315,
+        "events": 1000
+      },
+      {
+        "startLedger": 65288351,
+        "events": 1000
+      }
+    ],
+    "seCursors": [
+      "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABSC4",
+      "CAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMY",
+      "CAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAY6F",
+      "CAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABJQB",
+      "CBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABP37",
+      "CBIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6V3",
+      "CBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFHG",
+      "CBYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABUJC",
+      "CCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJQ2",
+      "CCIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABY66",
+      "CCQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDMD",
+      "CCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASCH",
+      "CDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUJZ",
+      "CDIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABFH5",
+      "CDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB6VA",
+      "CDYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP3E"
+    ],
+    "sePages": 16,
+    "selection": "all 282 distinct hashes seen",
+    "net": {
+      "live": 78,
+      "cached": 3,
+      "retries": 1,
+      "bytes": 22879745
+    }
+  },
+  "crossCheck": {
+    "checked": 200,
+    "agree": 200,
+    "disagree": []
+  },
+  "contracts": [
+    {
+      "contract": "CA7TELVQ6D4AQWRAWTD6HUIJUHVHJP2JQBMG2QKZW2XKO4DM6GDTLIUG",
+      "sources": [
+        "se-top",
+        "rpc-instance"
+      ],
+      "rpcExecutable": "wasm",
+      "rpcWasm": "49f8f44b212e9d975a4a35f0da0dad864f1b93394cee17316b6844fbb570a8d8"
+    },
+    {
+      "contract": "CAIC66NQBFB3IWVNFQXV5GRMQ23PPSTF7LYGMOW4GT5UZ3JFH5IOI4X5",
+      "sources": [
+        "se-contracts"
+      ],
+      "seWasm": "71648e1b8ee1231ea03c096257ed3c6d55478effbfab77b8e587a5139ab84cbe",
+      "created": 1786066103
+    },
+    {
+      "contract": "CAOAWPLNVWVHR5TMNLNT2EWXLVXCNUWVFIMV4C7OJWDGCKFI7RTUB5EU",
+      "sources": [
+        "se-top",
+        "rpc-instance"
+      ],
+      "rpcExecutable": "wasm",
+      "rpcWasm": "02f4b2291007636274677e0723c4f032190dfd9a2ba8d2a142724415a5491fd4"
+    },
+    {
+      "contract": "CBAE3AHYJZ62AXM5IOQRI62RZGHFELQJ4XGJVCSHTAD6OXCV24ISOHMZ",
+      "sources": [
+        "se-contracts"
+      ],
+      "seWasm": "71648e1b8ee1231ea03c096257ed3c6d55478effbfab77b8e587a5139ab84cbe",
+      "created": 1750282750
+    },
+    {
+      "contract": "CBAEGBY6AC2JWVKE7S2FIGTN76JWZAM7EVC3FLR43EFYZJE5NEKJN3IK",
+      "sources": [
+        "se-contracts"
+      ],
+      "seWasm": "e8f1566e432cdfbbb433b36bc7198bb140ca2fb6e38252d9e3c354d18393a7ea",
+      "created": 1749808946
+    },
+    {
+      "contract": "CBQEQ3OVWWKMLYHPQK4OJFJG4YDV6U7RNZ236VWT4L326WQOH7ET5BGM",
+      "sources": [
+        "se-contracts"
+      ],
+      "seWasm": "49f8f44b212e9d975a4a35f0da0dad864f1b93394cee17316b6844fbb570a8d8",
+      "created": 1792615533
+    },
+    {
+      "contract": "CBYABMKEOVRZPJLMBBEN7YIMB2HAWKIIPBQPAKDCFNASGZPZXW4ES2PG",
+      "sources": [
+        "se-contracts"
+      ],
+      "seWasm": "e45c42b944a767bd5f37f8c4a469b48917d28e23481dbfd550419c84cdacde92",
+      "created": 1762413641
+    },
+    {
+      "contract": "CBYB5DNJIYTCKYMCWLSDSO3GUHYQKYO5Y73UI3U6UR2XZLQTRSQZQUGF",
+      "sources": [
+        "se-contracts"
+      ],
+      "seWasm": "e45c42b944a767bd5f37f8c4a469b48917d28e23481dbfd550419c84cdacde92",
+      "created": 1759508516
+    },
+    {
+      "contract": "CC5NDQ336LIMHYZFP674DI7UAX2JMDJDE2JMROVD6WPRT7XLN52XMC7C",
+      "sources": [
+        "se-top",
+        "rpc-instance"
+      ],
+      "rpcExecutable": "wasm",
+      "rpcWasm": "281930d4bfb227b40a6e9847dc963f1a4bacfee34b9876cf5770eab6d9eec3e4"
+    },
+    {
+      "contract": "CCIAE4D3SBAKHYGWN6FMY74ILYKNQXE7FQNYZESFUFAPS2JYZRNYED4F",
+      "sources": [
+        "se-contracts"
+      ],
+      "seWasm": "a29f0384e948343a4bdc11c8c640c56345cbf91acf770828219766fc6c829382",
+      "created": 1741726446
+    },
+    {
+      "contract": "CCM23MFAJHDWUMF3IM3UPUI4ZUFFKX6OWJNJRUKO2W6MUTQNQWWFH7DC",
+      "sources": [
+        "se-top",
+        "rpc-instance"
+      ],
+      "rpcExecutable": "wasm",
+      "rpcWasm": "7a4e2b964aca487b8dcf0cb6c4e4f15468cfd1d121620e57a5773db21de4627b"
+    },
+    {
+      "contract": "CCQCI4NEFXHKNM5ALKIPGWZZ55RDYO7P3WAOFNV77OJ7RZ2SKKXMFXMB",
+      "sources": [
+        "se-contracts"
+      ],
+      "seWasm": "e52aadb8982a9e2345331e7bc581eaf30d0536465c3785ef38cc7c7db34aff5e",
+      "created": 1792603538
+    },
+    {
+      "contract": "CCQCIIJ5HOXOVBG6TRNQAY5PFLPIZZV5QDBI6337WETKRD4H7ND3W5K4",
+      "sources": [
+        "se-contracts"
+      ],
+      "seWasm": "47e0fa7be2a90052c7fd8b9cb6b0a2e04007ba418962780b62f603aa41fbb477",
+      "created": 1789491777
+    },
+    {
+      "contract": "CCXL3CXZVZVATVIAENLWSLHEZ7M3G4TPEWMB5VCPTWIHKQYVUSNPQWRD",
+      "sources": [
+        "se-top",
+        "rpc-instance"
+      ],
+      "rpcExecutable": "wasm",
+      "rpcWasm": "281930d4bfb227b40a6e9847dc963f1a4bacfee34b9876cf5770eab6d9eec3e4"
+    },
+    {
+      "contract": "CDF4I3JEH27NNVZUTVAB66CMOYFVP346EH7KF36KLI6NBQCY2DJ5JHBY",
+      "sources": [
+        "se-top",
+        "rpc-instance"
+      ],
+      "rpcExecutable": "wasm",
+      "rpcWasm": "49f8f44b212e9d975a4a35f0da0dad864f1b93394cee17316b6844fbb570a8d8"
+    },
+    {
+      "contract": "CDI4LODRKBTKKNHYEURZ57KYBS4XZZO6PKJQ5E3SUT3URPIUIXXKZWIH",
+      "sources": [
+        "se-top",
+        "rpc-instance"
+      ],
+      "rpcExecutable": "wasm",
+      "rpcWasm": "281930d4bfb227b40a6e9847dc963f1a4bacfee34b9876cf5770eab6d9eec3e4"
+    },
+    {
+      "contract": "CDQAPIN7PMPK6KQEP7RLJSZ7ZOTILWNHSM6DW5QNIPX3DCAL4BAGGXCU",
+      "sources": [
+        "se-contracts"
+      ],
+      "seWasm": "034518dd939f0a323b441e405750b2dddb86db251858f6d0eb21e01004822ed0",
+      "created": 1711378016
+    },
+    {
+      "contract": "CDQAQCB2CUQUOCKCLEUL7VVSFZMAAUOINEHP4QRNL6XWMKBOS5E72EJD",
+      "sources": [
+        "se-contracts"
+      ],
+      "seWasm": "e52aadb8982a9e2345331e7bc581eaf30d0536465c3785ef38cc7c7db34aff5e",
+      "created": 1792094357
+    },
+    {
+      "contract": "CDXOHZDLLF6AMQ5NLZQOWRSBQIJBFPC4KWQ6SOLKQSQOP2EYDQC4E5IB",
+      "sources": [
+        "se-top",
+        "rpc-instance"
+      ],
+      "rpcExecutable": "wasm",
+      "rpcWasm": "b38a98281f328d02f8eb741bedf27bd8698fd5f69980cb12dee66f92b5dff959"
+    },
+    {
+      "contract": "CDYBGMDJY7ZPUXICECE523UJTSVQDX3IQLWVDYCTCVXPOQUT44AKUUK4",
+      "sources": [
+        "se-contracts"
+      ],
+      "seWasm": "c5509dfa5f022deb8ae621f073adac5fd788feca0b24d15b5f392ab22c2ff222",
+      "created": 1743092363
+    }
+  ],
+  "hashes": [
+    {
+      "hash": "02f4b2291007636274677e0723c4f032190dfd9a2ba8d2a142724415a5491fd4",
+      "sources": [
+        "rpc-instance"
+      ],
+      "contracts": [
+        "CAOAWPLNVWVHR5TMNLNT2EWXLVXCNUWVFIMV4C7OJWDGCKFI7RTUB5EU"
+      ],
+      "selected": true,
+      "fetch": "rpc",
+      "size": 7320,
+      "lastModifiedLedger": 65163955,
+      "liveUntilLedger": 67237554
+    },
+    {
+      "hash": "034518dd939f0a323b441e405750b2dddb86db251858f6d0eb21e01004822ed0",
+      "sources": [
+        "se-contracts"
+      ],
+      "contracts": [
+        "CDQAPIN7PMPK6KQEP7RLJSZ7ZOTILWNHSM6DW5QNIPX3DCAL4BAGGXCU"
+      ],
+      "selected": true,
+      "fetch": "rpc",
+      "size": 1130,
+      "lastModifiedLedger": 50905676,
+      "liveUntilLedger": 0
+    },
+    {
+      "hash": "281930d4bfb227b40a6e9847dc963f1a4bacfee34b9876cf5770eab6d9eec3e4",
+      "sources": [
+        "rpc-instance"
+      ],
+      "contracts": [
+        "CC5NDQ336LIMHYZFP674DI7UAX2JMDJDE2JMROVD6WPRT7XLN52XMC7C",
+        "CDI4LODRKBTKKNHYEURZ57KYBS4XZZO6PKJQ5E3SUT3URPIUIXXKZWIH",
+        "CCXL3CXZVZVATVIAENLWSLHEZ7M3G4TPEWMB5VCPTWIHKQYVUSNPQWRD"
+      ],
+      "selected": true,
+      "fetch": "rpc",
+      "size": 12636,
+      "lastModifiedLedger": 64955131,
+      "liveUntilLedger": 67028730
+    },
+    {
+      "hash": "47e0fa7be2a90052c7fd8b9cb6b0a2e04007ba418962780b62f603aa41fbb477",
+      "sources": [
+        "se-contracts"
+      ],
+      "contracts": [
+        "CCQCIIJ5HOXOVBG6TRNQAY5PFLPIZZV5QDBI6337WETKRD4H7ND3W5K4"
+      ],
+      "selected": true,
+      "fetch": "rpc",
+      "size": 20926,
+      "lastModifiedLedger": 63495331,
+      "liveUntilLedger": 65796914
+    },
+    {
+      "hash": "49f8f44b212e9d975a4a35f0da0dad864f1b93394cee17316b6844fbb570a8d8",
+      "sources": [
+        "se-contracts",
+        "rpc-instance"
+      ],
+      "contracts": [
+        "CBQEQ3OVWWKMLYHPQK4OJFJG4YDV6U7RNZ236VWT4L326WQOH7ET5BGM",
+        "CA7TELVQ6D4AQWRAWTD6HUIJUHVHJP2JQBMG2QKZW2XKO4DM6GDTLIUG",
+        "CDF4I3JEH27NNVZUTVAB66CMOYFVP346EH7KF36KLI6NBQCY2DJ5JHBY"
+      ],
+      "selected": true,
+      "fetch": "rpc",
+      "size": 5006,
+      "lastModifiedLedger": 64857123,
+      "liveUntilLedger": 67967523
+    },
+    {
+      "hash": "71648e1b8ee1231ea03c096257ed3c6d55478effbfab77b8e587a5139ab84cbe",
+      "sources": [
+        "se-contracts"
+      ],
+      "contracts": [
+        "CAIC66NQBFB3IWVNFQXV5GRMQ23PPSTF7LYGMOW4GT5UZ3JFH5IOI4X5",
+        "CBAE3AHYJZ62AXM5IOQRI62RZGHFELQJ4XGJVCSHTAD6OXCV24ISOHMZ"
+      ],
+      "selected": true,
+      "fetch": "rpc",
+      "size": 9783,
+      "lastModifiedLedger": 56614045,
+      "liveUntilLedger": 65967289
+    },
+    {
+      "hash": "7a4e2b964aca487b8dcf0cb6c4e4f15468cfd1d121620e57a5773db21de4627b",
+      "sources": [
+        "rpc-instance"
+      ],
+      "contracts": [
+        "CCM23MFAJHDWUMF3IM3UPUI4ZUFFKX6OWJNJRUKO2W6MUTQNQWWFH7DC"
+      ],
+      "selected": true,
+      "fetch": "rpc",
+      "size": 899,
+      "lastModifiedLedger": 60891179,
+      "liveUntilLedger": 65375065
+    },
+    {
+      "hash": "a29f0384e948343a4bdc11c8c640c56345cbf91acf770828219766fc6c829382",
+      "sources": [
+        "se-contracts"
+      ],
+      "contracts": [
+        "CCIAE4D3SBAKHYGWN6FMY74ILYKNQXE7FQNYZESFUFAPS2JYZRNYED4F"
+      ],
+      "selected": true,
+      "fetch": "rpc",
+      "size": 1315,
+      "lastModifiedLedger": 56107072,
+      "liveUntilLedger": 0
+    },
+    {
+      "hash": "b38a98281f328d02f8eb741bedf27bd8698fd5f69980cb12dee66f92b5dff959",
+      "sources": [
+        "rpc-instance"
+      ],
+      "contracts": [
+        "CDXOHZDLLF6AMQ5NLZQOWRSBQIJBFPC4KWQ6SOLKQSQOP2EYDQC4E5IB"
+      ],
+      "selected": true,
+      "fetch": "rpc",
+      "size": 25593,
+      "lastModifiedLedger": 65163957,
+      "liveUntilLedger": 67237556
+    },
+    {
+      "hash": "c5509dfa5f022deb8ae621f073adac5fd788feca0b24d15b5f392ab22c2ff222",
+      "sources": [
+        "se-contracts"
+      ],
+      "contracts": [
+        "CDYBGMDJY7ZPUXICECE523UJTSVQDX3IQLWVDYCTCVXPOQUT44AKUUK4"
+      ],
+      "selected": true,
+      "fetch": "rpc",
+      "size": 21660,
+      "lastModifiedLedger": 55630656,
+      "liveUntilLedger": 0
+    },
+    {
+      "hash": "e45c42b944a767bd5f37f8c4a469b48917d28e23481dbfd550419c84cdacde92",
+      "sources": [
+        "se-contracts"
+      ],
+      "contracts": [
+        "CBYABMKEOVRZPJLMBBEN7YIMB2HAWKIIPBQPAKDCFNASGZPZXW4ES2PG",
+        "CBYB5DNJIYTCKYMCWLSDSO3GUHYQKYO5Y73UI3U6UR2XZLQTRSQZQUGF"
+      ],
+      "selected": true,
+      "fetch": "rpc",
+      "size": 23111,
+      "lastModifiedLedger": 59214216,
+      "liveUntilLedger": 68014599
+    },
+    {
+      "hash": "e52aadb8982a9e2345331e7bc581eaf30d0536465c3785ef38cc7c7db34aff5e",
+      "sources": [
+        "se-contracts"
+      ],
+      "contracts": [
+        "CCQCI4NEFXHKNM5ALKIPGWZZ55RDYO7P3WAOFNV77OJ7RZ2SKKXMFXMB",
+        "CDQAQCB2CUQUOCKCLEUL7VVSFZMAAUOINEHP4QRNL6XWMKBOS5E72EJD"
+      ],
+      "selected": true,
+      "fetch": "rpc",
+      "size": 5843,
+      "lastModifiedLedger": 64859224,
+      "liveUntilLedger": 67969624
+    },
+    {
+      "hash": "e8f1566e432cdfbbb433b36bc7198bb140ca2fb6e38252d9e3c354d18393a7ea",
+      "sources": [
+        "se-contracts"
+      ],
+      "contracts": [
+        "CBAEGBY6AC2JWVKE7S2FIGTN76JWZAM7EVC3FLR43EFYZJE5NEKJN3IK"
+      ],
+      "selected": true,
+      "fetch": "rpc",
+      "size": 2912,
+      "lastModifiedLedger": 57525679,
+      "liveUntilLedger": 0
+    }
+  ]
+}

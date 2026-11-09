@@ -1,0 +1,51 @@
+{
+  "format": "sik.wasm-catalog.fixture-provenance/v1",
+  "kind": "mainnet read-only capture",
+  "capturedAt": "2026-11-04T00:55:50.606Z",
+  "script": "scripts/capture-fixtures.ts",
+  "fromHarvest": {
+    "generatedAt": "2026-11-04T00:51:35.679Z",
+    "rpcUrl": "https://mainnet.sorobanrpc.com",
+    "latestLedger": 65293477,
+    "rpcVersion": {
+      "version": "29.0.1-055dc9c7a9a9e038c6807a555c09bd94b85c9e2c",
+      "commitHash": "055dc9c7a9a9e038c6807a555c09bd94b85c9e2c",
+      "buildTimestamp": "2026-10-13T09:48:37",
+      "captiveCoreVersion": "stellar-core 29.0.0 (4eb83337380a29ad0907f4e32196ce97b8dc7649)",
+      "protocolVersion": 29
+    }
+  },
+  "ledgerEntriesLatestLedger": 65293542,
+  "note": "Wasm blobs were fetched by hash with RPC getLedgerEntries (CONTRACT_CODE) or stellar.expert /wasm/{hash} by the harvester and sha256-checked. Public on-chain data; no keys.",
+  "reasons": {
+    "281930d4bfb227b40a6e9847dc963f1a4bacfee34b9876cf5770eab6d9eec3e4": "no contractspecv0",
+    "49f8f44b212e9d975a4a35f0da0dad864f1b93394cee17316b6844fbb570a8d8": "declares events",
+    "e52aadb8982a9e2345331e7bc581eaf30d0536465c3785ef38cc7c7db34aff5e": "declares events",
+    "47e0fa7be2a90052c7fd8b9cb6b0a2e04007ba418962780b62f603aa41fbb477": "SEP-58 build fields",
+    "7a4e2b964aca487b8dcf0cb6c4e4f15468cfd1d121620e57a5773db21de4627b": "SEP-55 source_repo",
+    "b38a98281f328d02f8eb741bedf27bd8698fd5f69980cb12dee66f92b5dff959": "SEP-47 sep meta",
+    "71648e1b8ee1231ea03c096257ed3c6d55478effbfab77b8e587a5139ab84cbe": "undeclared type reference",
+    "02f4b2291007636274677e0723c4f032190dfd9a2ba8d2a142724415a5491fd4": "same error code twice",
+    "a29f0384e948343a4bdc11c8c640c56345cbf91acf770828219766fc6c829382": "duplicate type name",
+    "e8f1566e432cdfbbb433b36bc7198bb140ca2fb6e38252d9e3c354d18393a7ea": "SDK generator output fails tsc",
+    "034518dd939f0a323b441e405750b2dddb86db251858f6d0eb21e01004822ed0": "oldest env protocol",
+    "c5509dfa5f022deb8ae621f073adac5fd788feca0b24d15b5f392ab22c2ff222": "same-interface group",
+    "e45c42b944a767bd5f37f8c4a469b48917d28e23481dbfd550419c84cdacde92": "same-interface group"
+  },
+  "totalWasmBytes": 138134,
+  "files": {
+    "wasm/281930d4bfb227b40a6e9847dc963f1a4bacfee34b9876cf5770eab6d9eec3e4.wasm": "281930d4bfb227b40a6e9847dc963f1a4bacfee34b9876cf5770eab6d9eec3e4",
+    "wasm/49f8f44b212e9d975a4a35f0da0dad864f1b93394cee17316b6844fbb570a8d8.wasm": "49f8f44b212e9d975a4a35f0da0dad864f1b93394cee17316b6844fbb570a8d8",
+    "wasm/e52aadb8982a9e2345331e7bc581eaf30d0536465c3785ef38cc7c7db34aff5e.wasm": "e52aadb8982a9e2345331e7bc581eaf30d0536465c3785ef38cc7c7db34aff5e",
+    "wasm/47e0fa7be2a90052c7fd8b9cb6b0a2e04007ba418962780b62f603aa41fbb477.wasm": "47e0fa7be2a90052c7fd8b9cb6b0a2e04007ba418962780b62f603aa41fbb477",
+    "wasm/7a4e2b964aca487b8dcf0cb6c4e4f15468cfd1d121620e57a5773db21de4627b.wasm": "7a4e2b964aca487b8dcf0cb6c4e4f15468cfd1d121620e57a5773db21de4627b",
+    "wasm/b38a98281f328d02f8eb741bedf27bd8698fd5f69980cb12dee66f92b5dff959.wasm": "b38a98281f328d02f8eb741bedf27bd8698fd5f69980cb12dee66f92b5dff959",
+    "wasm/71648e1b8ee1231ea03c096257ed3c6d55478effbfab77b8e587a5139ab84cbe.wasm": "71648e1b8ee1231ea03c096257ed3c6d55478effbfab77b8e587a5139ab84cbe",
+    "wasm/02f4b2291007636274677e0723c4f032190dfd9a2ba8d2a142724415a5491fd4.wasm": "02f4b2291007636274677e0723c4f032190dfd9a2ba8d2a142724415a5491fd4",
+    "wasm/a29f0384e948343a4bdc11c8c640c56345cbf91acf770828219766fc6c829382.wasm": "a29f0384e948343a4bdc11c8c640c56345cbf91acf770828219766fc6c829382",
+    "wasm/e8f1566e432cdfbbb433b36bc7198bb140ca2fb6e38252d9e3c354d18393a7ea.wasm": "e8f1566e432cdfbbb433b36bc7198bb140ca2fb6e38252d9e3c354d18393a7ea",
+    "wasm/034518dd939f0a323b441e405750b2dddb86db251858f6d0eb21e01004822ed0.wasm": "034518dd939f0a323b441e405750b2dddb86db251858f6d0eb21e01004822ed0",
+    "wasm/c5509dfa5f022deb8ae621f073adac5fd788feca0b24d15b5f392ab22c2ff222.wasm": "c5509dfa5f022deb8ae621f073adac5fd788feca0b24d15b5f392ab22c2ff222",
+    "wasm/e45c42b944a767bd5f37f8c4a469b48917d28e23481dbfd550419c84cdacde92.wasm": "e45c42b944a767bd5f37f8c4a469b48917d28e23481dbfd550419c84cdacde92"
+  }
+}
