@@ -1,0 +1,708 @@
+{
+  "format": "sik.wasm-catalog.spec/v1",
+  "generator": "@sik/wasm-catalog (@sik/wasm-catalog bindings v1, @stellar/stellar-sdk 17.4.0)",
+  "hash": "71648e1b8ee1231ea03c096257ed3c6d55478effbfab77b8e587a5139ab84cbe",
+  "size": 9783,
+  "codeSha256": "ca5e4c4b9d88b866252f270f3b69cd5270bd039e57bedb7e92255090b8b58703",
+  "customSectionNames": [
+    "contractspecv0",
+    "contractenvmetav0",
+    "contractmetav0"
+  ],
+  "spec": {
+    "present": true,
+    "sectionCount": 1,
+    "bytes": 2448,
+    "entries": [
+      {
+        "udt_error_enum_v0": {
+          "doc": "",
+          "lib": "",
+          "name": "ContractError",
+          "cases": [
+            {
+              "doc": "",
+              "name": "MigrationNotAllowed",
+              "value": 1
+            },
+            {
+              "doc": "",
+              "name": "NotMinter",
+              "value": 2
+            },
+            {
+              "doc": "",
+              "name": "InvalidAmount",
+              "value": 3
+            },
+            {
+              "doc": "",
+              "name": "InvalidExpirationLedger",
+              "value": 4
+            },
+            {
+              "doc": "",
+              "name": "InsufficientAllowance",
+              "value": 5
+            },
+            {
+              "doc": "",
+              "name": "InsufficientBalance",
+              "value": 6
+            },
+            {
+              "doc": "",
+              "name": "MigrationInProgress",
+              "value": 7
+            },
+            {
+              "doc": "",
+              "name": "MinterAlreadyExists",
+              "value": 8
+            }
+          ]
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "allowance",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "spender",
+              "type": "address"
+            }
+          ],
+          "outputs": [
+            "i128"
+          ]
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "approve",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "spender",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "amount",
+              "type": "i128"
+            },
+            {
+              "doc": "",
+              "name": "expiration_ledger",
+              "type": "u32"
+            }
+          ],
+          "outputs": []
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "balance",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "id",
+              "type": "address"
+            }
+          ],
+          "outputs": [
+            "i128"
+          ]
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "transfer",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "amount",
+              "type": "i128"
+            }
+          ],
+          "outputs": []
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "transfer_from",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "spender",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "amount",
+              "type": "i128"
+            }
+          ],
+          "outputs": []
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "burn",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "amount",
+              "type": "i128"
+            }
+          ],
+          "outputs": []
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "burn_from",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "spender",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "amount",
+              "type": "i128"
+            }
+          ],
+          "outputs": []
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "decimals",
+          "inputs": [],
+          "outputs": [
+            "u32"
+          ]
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "name",
+          "inputs": [],
+          "outputs": [
+            "string"
+          ]
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "symbol",
+          "inputs": [],
+          "outputs": [
+            "string"
+          ]
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "token_id",
+          "inputs": [],
+          "outputs": [
+            {
+              "bytes_n": {
+                "n": 32
+              }
+            }
+          ]
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "is_minter",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "minter",
+              "type": "address"
+            }
+          ],
+          "outputs": [
+            "bool"
+          ]
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "mint_from",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "minter",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "amount",
+              "type": "i128"
+            }
+          ],
+          "outputs": [
+            {
+              "result": {
+                "ok_type": {
+                  "tuple": {
+                    "value_types": []
+                  }
+                },
+                "error_type": {
+                  "udt": {
+                    "name": "ContractError"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "add_minter",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "minter",
+              "type": "address"
+            }
+          ],
+          "outputs": []
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "remove_minter",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "minter",
+              "type": "address"
+            }
+          ],
+          "outputs": []
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "set_admin",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "admin",
+              "type": "address"
+            }
+          ],
+          "outputs": []
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "admin",
+          "inputs": [],
+          "outputs": [
+            "address"
+          ]
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "set_authorized",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "_id",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "_authorize",
+              "type": "bool"
+            }
+          ],
+          "outputs": []
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "authorized",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "_id",
+              "type": "address"
+            }
+          ],
+          "outputs": [
+            "bool"
+          ]
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "mint",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "amount",
+              "type": "i128"
+            }
+          ],
+          "outputs": []
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "clawback",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "_amount",
+              "type": "i128"
+            }
+          ],
+          "outputs": []
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "owner",
+          "inputs": [],
+          "outputs": [
+            "address"
+          ]
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "transfer_ownership",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "new_owner",
+              "type": "address"
+            }
+          ],
+          "outputs": []
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "__constructor",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "minter",
+              "type": {
+                "option": {
+                  "value_type": "address"
+                }
+              }
+            },
+            {
+              "doc": "",
+              "name": "token_id",
+              "type": {
+                "bytes_n": {
+                  "n": 32
+                }
+              }
+            },
+            {
+              "doc": "",
+              "name": "token_metadata",
+              "type": {
+                "udt": {
+                  "name": "TokenMetadata"
+                }
+              }
+            }
+          ],
+          "outputs": []
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "version",
+          "inputs": [],
+          "outputs": [
+            "string"
+          ]
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "required_auths",
+          "inputs": [],
+          "outputs": [
+            {
+              "vec": {
+                "element_type": "address"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "upgrade",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "new_wasm_hash",
+              "type": {
+                "bytes_n": {
+                  "n": 32
+                }
+              }
+            }
+          ],
+          "outputs": []
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "migrate",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "migration_data",
+              "type": {
+                "udt": {
+                  "name": "__InterchainTokenMigrationData"
+                }
+              }
+            }
+          ],
+          "outputs": [
+            {
+              "result": {
+                "ok_type": {
+                  "tuple": {
+                    "value_types": []
+                  }
+                },
+                "error_type": {
+                  "udt": {
+                    "name": "ContractError"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "udt_struct_v0": {
+          "doc": "",
+          "lib": "",
+          "name": "AllowanceValue",
+          "fields": [
+            {
+              "doc": "",
+              "name": "amount",
+              "type": "i128"
+            },
+            {
+              "doc": "",
+              "name": "expiration_ledger",
+              "type": "u32"
+            }
+          ]
+        }
+      },
+      {
+        "udt_struct_v0": {
+          "doc": "",
+          "lib": "",
+          "name": "AllowanceDataKey",
+          "fields": [
+            {
+              "doc": "",
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "spender",
+              "type": "address"
+            }
+          ]
+        }
+      },
+      {
+        "udt_struct_v0": {
+          "doc": "",
+          "lib": "",
+          "name": "TokenMetadata",
+          "fields": [
+            {
+              "doc": "",
+              "name": "decimal",
+              "type": "u32"
+            },
+            {
+              "doc": "",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "doc": "",
+              "name": "symbol",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      {
+        "udt_struct_v0": {
+          "doc": "",
+          "lib": "",
+          "name": "Token",
+          "fields": [
+            {
+              "doc": "",
+              "name": "address",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "amount",
+              "type": "i128"
+            }
+          ]
+        }
+      }
+    ],
+    "sdkDecodes": true,
+    "sdkFromWasm": true,
+    "sha256": "8c72e9f7165c6334d77f5f31ef946221b3d0eb90f4c3861def5631a0ba515de6",
+    "interfaceSha256": "b2f4e714997bb1ae87f286d6f8ea50d62047224cd0185c79ef1f5c511576301a"
+  },
+  "meta": {
+    "present": true,
+    "entries": [
+      {
+        "key": "rsver",
+        "val": "1.81.0"
+      },
+      {
+        "key": "rssdkver",
+        "val": "22.0.7#211569aa49c8d896877dfca1f2eb4fe9071121c8"
+      }
+    ],
+    "sdkDecodes": true,
+    "seps": [],
+    "sep55": {},
+    "rustVersion": "1.81.0",
+    "sdkVersion": "22.0.7",
+    "sdkCommit": "211569aa49c8d896877dfca1f2eb4fe9071121c8"
+  },
+  "envMeta": {
+    "present": true,
+    "entries": [
+      {
+        "protocol": 22,
+        "preRelease": 0
+      }
+    ],
+    "sdkDecodes": true
+  }
+}

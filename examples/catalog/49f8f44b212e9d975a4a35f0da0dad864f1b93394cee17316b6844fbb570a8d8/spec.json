@@ -1,0 +1,334 @@
+{
+  "format": "sik.wasm-catalog.spec/v1",
+  "generator": "@sik/wasm-catalog (@sik/wasm-catalog bindings v1, @stellar/stellar-sdk 17.4.0)",
+  "hash": "49f8f44b212e9d975a4a35f0da0dad864f1b93394cee17316b6844fbb570a8d8",
+  "size": 5006,
+  "codeSha256": "47a8ff116c81e8c3935b5de500b56eb35ae79a6a78d6497a41c202d1be167058",
+  "customSectionNames": [
+    "contractenvmetav0",
+    "contractmetav0",
+    "contractmetav0",
+    "contractspecv0"
+  ],
+  "spec": {
+    "present": true,
+    "sectionCount": 1,
+    "bytes": 940,
+    "entries": [
+      {
+        "event_v0": {
+          "doc": "",
+          "lib": "",
+          "name": "DevPriceSet",
+          "prefix_topics": [
+            "dev_price_set"
+          ],
+          "params": [
+            {
+              "doc": "",
+              "name": "asset",
+              "type": {
+                "udt": {
+                  "name": "Asset"
+                }
+              },
+              "location": "topic_list"
+            },
+            {
+              "doc": "",
+              "name": "price",
+              "type": {
+                "option": {
+                  "value_type": "i128"
+                }
+              },
+              "location": "data"
+            },
+            {
+              "doc": "",
+              "name": "timestamp",
+              "type": "u64",
+              "location": "data"
+            }
+          ],
+          "data_format": "map"
+        }
+      },
+      {
+        "udt_error_enum_v0": {
+          "doc": "",
+          "lib": "",
+          "name": "DevOracleError",
+          "cases": [
+            {
+              "doc": "",
+              "name": "NotAdmin",
+              "value": 1
+            },
+            {
+              "doc": "",
+              "name": "NegativePrice",
+              "value": 2
+            }
+          ]
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "base",
+          "inputs": [],
+          "outputs": [
+            {
+              "udt": {
+                "name": "Asset"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "admin",
+          "inputs": [],
+          "outputs": [
+            "address"
+          ]
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "decimals",
+          "inputs": [],
+          "outputs": [
+            "u32"
+          ]
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "lastprice",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "asset",
+              "type": {
+                "udt": {
+                  "name": "Asset"
+                }
+              }
+            }
+          ],
+          "outputs": [
+            {
+              "option": {
+                "value_type": {
+                  "udt": {
+                    "name": "PriceData"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "set_price",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "caller",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "asset",
+              "type": {
+                "udt": {
+                  "name": "Asset"
+                }
+              }
+            },
+            {
+              "doc": "",
+              "name": "price",
+              "type": {
+                "option": {
+                  "value_type": "i128"
+                }
+              }
+            }
+          ],
+          "outputs": []
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "resolution",
+          "inputs": [],
+          "outputs": [
+            "u32"
+          ]
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "set_price_at",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "caller",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "asset",
+              "type": {
+                "udt": {
+                  "name": "Asset"
+                }
+              }
+            },
+            {
+              "doc": "",
+              "name": "price",
+              "type": {
+                "option": {
+                  "value_type": "i128"
+                }
+              }
+            },
+            {
+              "doc": "",
+              "name": "timestamp",
+              "type": "u64"
+            }
+          ],
+          "outputs": []
+        }
+      },
+      {
+        "function_v0": {
+          "doc": "",
+          "name": "__constructor",
+          "inputs": [
+            {
+              "doc": "",
+              "name": "admin",
+              "type": "address"
+            },
+            {
+              "doc": "",
+              "name": "decimals",
+              "type": "u32"
+            }
+          ],
+          "outputs": []
+        }
+      },
+      {
+        "udt_union_v0": {
+          "doc": "",
+          "lib": "",
+          "name": "Asset",
+          "cases": [
+            {
+              "tuple_v0": {
+                "doc": "",
+                "name": "Stellar",
+                "type": [
+                  "address"
+                ]
+              }
+            },
+            {
+              "tuple_v0": {
+                "doc": "",
+                "name": "Other",
+                "type": [
+                  "symbol"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "udt_struct_v0": {
+          "doc": "",
+          "lib": "",
+          "name": "PriceData",
+          "fields": [
+            {
+              "doc": "",
+              "name": "price",
+              "type": "i128"
+            },
+            {
+              "doc": "",
+              "name": "timestamp",
+              "type": "u64"
+            }
+          ]
+        }
+      }
+    ],
+    "sdkDecodes": true,
+    "sdkFromWasm": true,
+    "sha256": "4438d372f36d342a504c5648a0afcfe209e7a8d1a6d5688414b03ff86c6bf3c8",
+    "interfaceSha256": "279ff2b373b715b7a5fd9db71a3e23abb68699eecb34ffd7ef62bac1a01c3977"
+  },
+  "meta": {
+    "present": true,
+    "entries": [
+      {
+        "key": "rsver",
+        "val": "1.98.1"
+      },
+      {
+        "key": "rssdkver",
+        "val": "28.0.0#48d506712f964094d14176e2f0b02afcd1054567"
+      },
+      {
+        "key": "rssdk_spec_shaking",
+        "val": "2"
+      },
+      {
+        "key": "cliver",
+        "val": "28.0.0#300aaf69ab100536678bdb641428b06f06b318ea"
+      },
+      {
+        "key": "license",
+        "val": "LicenseRef-PSGDigitalLabs-Proprietary"
+      },
+      {
+        "key": "copyright",
+        "val": "Copyright (c) 2026 PSG Digital Labs. All rights reserved."
+      }
+    ],
+    "sdkDecodes": true,
+    "seps": [],
+    "sep55": {},
+    "rustVersion": "1.98.1",
+    "sdkVersion": "28.0.0",
+    "sdkCommit": "48d506712f964094d14176e2f0b02afcd1054567",
+    "cliVersion": "28.0.0#300aaf69ab100536678bdb641428b06f06b318ea"
+  },
+  "envMeta": {
+    "present": true,
+    "entries": [
+      {
+        "protocol": 28,
+        "preRelease": 0
+      }
+    ],
+    "sdkDecodes": true
+  }
+}
