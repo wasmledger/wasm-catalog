@@ -1,0 +1,11 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+@import 'tailwindcss';
+@import './styles/kit/tailwind-theme.css';
+@import '@fontsource-variable/geist';
+@import '@fontsource-variable/geist-mono';
+
+html { scroll-padding-top: calc(var(--sik-header-h) + 1rem); }
+
+/* Code blocks for signatures and bindings: wrap long lines on phones, keep exact text. */
+.code-block { white-space: pre; overflow-x: auto; tab-size: 2; }
+@media (max-width: 640px) { .code-block.wrap-sm { white-space: pre-wrap; overflow-wrap: anywhere; } }
